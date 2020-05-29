@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Risk Progression</title>
+        <link rel="stylesheet" href="Calc.css">
+        <script src="validation.js"></script>
+        <script src="textvalidate.js"></script>
+    </head>
+    <body>
+        <h1 class="heading">RISK CALCULATOR</h1>
+        <div class="para-container">
+            <div class="epidem-container">
+                <h1 class="head">EPIDEMIOLOGY</h1>
+                <form class="epidem">
+                    <br>
+                    <br>
+                    <label>
+                        Age:           
+                        <input type = "number" id="ag3" onchange="checkAGE()"><br>
+                        <span class="error" id="sage">Age Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                  <label>
+                    H/O PULMONARY DISEASE:
+                    <button type="button" id="btn1" onclick="yesPulmo()">Yes</button>
+                    <button type="button" id="btn2" onclick="noPulmo()">No</button><br>
+                    <span class="error" id="spul">Pulmonary Field is Important</span>
+                  </label>
+                    <br>  
+                    <br>
+                    <label>
+                        H/O CKD:
+                        <button type="button" id="btn3" onclick="yesCKD()">Yes</button>
+                        <button type="button" id="btn4" onclick="noCKD()">No</button><br>
+                        <span class="error" id="sckd">CKD Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        H/O DM/(HbA1c > 7.6):
+                        <button type="button" id="btn5" onclick="yesDM()">Yes</button>
+                        <button type="button" id="btn6" onclick="noDM()">No</button><br>
+                        <span class="error" id="sdm">DM Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        H/O HTN:
+                        <button type="button" id="btn7" onclick="yesHTN()">Yes</button>
+                        <button type="button" id="btn8" onclick="noHTN()">No</button><br>
+                        <span class="error" id="shtn">HTN Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        H/O HIV:
+                        <button type="button" id="btn9" onclick="yesHIV()">Yes</button>
+                        <button type="button" id="btn10" onclick="noHIV()">No</button><br>
+                        <span class="error" id="shiv">HIV Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        IMMUNOSUPRESSION/TRANSPLANT:
+                        <button type="button" id="btn11" onclick="yesImt()">Yes</button>
+                        <button type="button" id="btn12" onclick="noImt()">No</button><br>
+                        <span class="error" id="simt">Immunosuppression Field is Important</span>
+                    </label>
+
+                </form>
+
+            </div>
+            <div class="vital-container">
+                <h1 class="head">VITAL SIGNS</h1>
+                <form class="vital">
+                    <br>
+                    <br>
+                    <label>
+                        RESPIRATORY RATE:
+                        <input type="number" id="rr" onchange="checkRR()"><br>
+                        <span class="error" id="srr">RESPIRATORY RATE Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        HEART RATE:
+                        <input type="number" id="hr" onchange="checkHR()"><br>
+                        <span class="error" id="shr">HEARTRATE Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        SPO2:
+                        <input type="number" id="sp" onchange="checkSP()"><br>
+                        <span class="error" id="sspo">SPO2 Field is Important</span>
+                    </label>
+                </form>
+
+            </div>
+            <div class="lab-findings">
+                <h1 class="head">LABORATORY FINDINGS</h1>
+                <form class="lab">
+                    <br>
+                    <br>
+                    <label>
+                        D Dimer:
+                        <input type="number" id="dd" onchange="checkDD()"><br>
+                        <span class="error" id="sdd">D Dimer Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        CPK:
+                        <input type="number" id="cpk" onchange="checkCPK()" ><br>
+                        <span class="error" id="scpk">CPK Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        CRP:
+                        <input type="number" id="crp" onchange="checkCRP()"><br>
+                        <span class="error" id="scrp">CRP Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        LDH:
+                        <input type="number" id="ldh" onchange="checkLDH()" ><br>
+                        <span class="error" id="sldh">LDH Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        TROPONIN:
+                        <input type="number" id="tr" onchange="checkTR()"><br>
+                        <span class="error" id="str">TROPOPIN Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        FERRITIN:
+                        <input type="number" id="fr" onchange="checkFR()"><br>
+                        <span class="error" id="sfr">FERRITIN Field is Important</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        ABOSULUTE:  
+                        <input type="number" id="alc" onchange="checkALC()"><br>
+                        LYMPHOCYTE 
+                        COUNT<br>
+                        <span class="error" id="salc">Absolute Lymphotic Count Field is Important</span>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <button type="button" id="sub" onclick="checkParam()">CHECK PARAMETERS</button>
+        <button type="button" id ="npat" onclick="newpage()">NEW PATIENT</button>
+    </body>
+</html>

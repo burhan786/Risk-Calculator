@@ -1,0 +1,178 @@
+body{
+    background-color: lightcyan;
+}
+.para-container{
+    display: flex;
+}
+.vital-container{
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 20px;
+    width: 400px;
+}
+.vital{
+    margin-left: 10px;
+}
+#rr{
+    margin-left: 8px;
+}
+#hr{
+    margin-left: 62px;
+}
+#sp{
+    margin-left: 119px;
+}
+.vital-container > h1{
+    text-align: center;
+}
+.lab-findings{
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 550px;
+}
+.lab{
+    margin-left: 10px;
+}
+#dd{
+    margin-left: 34px;
+}
+#cpk{
+    margin-left: 60px;
+}
+#crp{
+    margin-left: 60px;
+}
+#ldh{
+    margin-left: 59px;
+}
+#tr{
+    margin-left: 12px;
+}
+#fr{
+    margin-left: 20px;
+}
+#alc{
+    margin-left: -2px;
+}
+.epidem-container{
+    background-color: white;
+    border: 1px solid  black;
+    width: 500px;
+    height: 550px;
+}
+.epidem{
+    margin-left: 10px;
+}
+.epidem-container > h1{
+    text-align: center;
+}
+.head{
+    text-shadow: red;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.heading{
+    font-size: 50px;
+    text-shadow: red;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+#ag3{
+    margin-left: 235px;
+}
+#btn1{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 74px;
+}
+#btn2{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 30px;
+}
+#btn3{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 210px;
+}
+#btn4{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 30px;
+}
+#btn5{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 119px;
+}
+#btn6{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 30px;
+}
+#btn7{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 211px;
+}
+#btn8{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 30px;
+}
+#btn9{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 217.5px;
+}
+#btn10{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 30px;
+}
+#btn11{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left:4.5px;
+}
+#btn12{
+    background-color: #e7e7e7; 
+    color: black;
+    margin-left: 30px;
+}
+#sub{
+    margin-top: 30px;
+    margin-left: 450px;
+    color: white;
+    background: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#npat{
+    margin-top: 30px;
+    margin-left: 120px;
+    color: white;
+    background: green;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.error{
+    visibility: hidden; 
+    color: red;
+}
+/* label{
+    border: 1px solid black;
+} */
