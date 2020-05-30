@@ -246,5 +246,5 @@ function checkParam(){
     }
 }
 function newpage(){
-    window.location = "Login.html";
+    window.location = "index.html";
 }
