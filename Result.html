@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Give me Your Descriotion</title>
-        <link rel="stylesheet" type="text/css" href="rpage.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src = "validation.js"></script>
+        <link rel="stylesheet" href="rpage.css">
     </head>
     <body>
-        <div class="main-container">
-            <div class="Image-container">
-                <img src="Hospital.jpg" id="img1">
-                <div class="Center_txt">RESULT</div>
-            </div>
-            <div class="form-container">
-                <div class="res-container"><span class="res" id="dispres">PATIENT IS AT HIGH RISK</span></div>
-                <div class="res-container1"><span class="res1" id="dispres1">PATIENT IS AT LOW RISK</span></div>
-                <div class="category">EPIDEMIOLOGY:
-                    <span id="ep"></span>
-                </div>
-                <div class="category"> VITAL SIGNS:
-                    <span id="vs"></span>
-                </div>
-                <div class="category">LAB-FINDINGS:
-                    <span id="lf"></span>
-                </div>
-                <button type="button" id="cls" onclick="closeres()">CLOSE</button>
-                <button type="button" id="np" onclick="newpage()">NEW PATIENT</button>
-            </div>
+
+        <h2>Modal Example</h2>
+        
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>PATEINT IS AT HIGH RISK</p>
+          </div>
+        
         </div>
-    </body>
+        </body>
 </html>

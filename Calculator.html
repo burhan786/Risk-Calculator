@@ -3,6 +3,8 @@
     <head>
         <title>Risk Progression</title>
         <link rel="stylesheet" href="Calc.css">
+        <link rel="stylesheet" href="rpage.css">
+        <link rel="stylesheet" href="rpage1.css">
         <script src="validation.js"></script>
         <script src="textvalidate.js"></script>
     </head>
@@ -157,5 +159,23 @@
         </div>
         <button type="button" id="sub" onclick="checkParam()">CHECK PARAMETERS</button>
         <button type="button" id ="npat" onclick="newpage()">NEW PATIENT</button>
+        <div id="myModal" class="modal">
+        
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>PATEINT IS AT HIGH RISK</p>
+            </div>
+          
+          </div>
+          <div id="myModal1" class="modal1">
+        
+            <!-- Modal content -->
+            <div class="modal-content1">
+              <span class="close1">&times;</span>
+              <p>PATEINT IS AT LOW RISK</p>
+            </div>
+          
+          </div>
     </body>
 </html>

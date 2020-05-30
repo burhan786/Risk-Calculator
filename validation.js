@@ -211,9 +211,29 @@ function checkParam(){
     console.log("Parameters in lab findings:" + count_lab);
     if(age.length != 0 && pd != -1 && ckd != -1 && dm != -1 && htn != -1 && hiv != -1 && imt != -1 && rr.length != 0 && hr.length != 0 && sp.length != 0 && dd.length != 0 && cpk.length != 0 && crp.length != 0 && ldh.length != 0 && tr.length != 0 && fr.length != 0 && alc.length != 0){
         if(count_epidem > 0 && count_vital > 0 && count_lab > 0){
-            window.alert("Patient is at High Risk");
+           var modal = document.getElementById("myModal");
+           modal.style.display = "block";
+           var sspan = document.getElementsByClassName("close")[0];
+           sspan.onclick = function(){
+               modal.style.display = "none";
+           }
+           window.onclick = function(event){
+               if(event.target == modal){
+                   modal.style.display = "none";
+               }
+           }
         }else{
-            window.alert("Patient is at Low Risk");
+            var modal1 = document.getElementById("myModal1");
+            modal1.style.display = "block";
+            var sspan1 = document.getElementsByClassName("close1")[0];
+            sspan1.onclick = function(){
+                modal1.style.display = "none";
+            }
+            window.onclick = function(event){
+                if(event.target == modal1){
+                    modal1.style.display = "none";
+                }
+            }
         }
     }else{
         window.alert("Please Enter complete details for the calculation")
