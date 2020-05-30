@@ -34,3 +34,17 @@
     text-decoration: none;
     cursor: pointer;
 }
+.respa{
+    margin: 15px;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#span1{
+    margin-left: 25px;
+}
+#span2{
+    margin-left: 65px;
+}
+#span3{
+    margin-left: 25px;
+}
