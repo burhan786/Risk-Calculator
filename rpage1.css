@@ -34,3 +34,16 @@
     text-decoration: none;
     cursor: pointer;
 }
+#sspan1{
+    margin-left: 25px;
+}
+#sspan2{
+    margin-left: 65px;
+}
+#sspan3{
+    margin-left: 25px;
+}
+#rissk_factor{
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
