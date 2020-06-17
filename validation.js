@@ -209,13 +209,14 @@ function checkParam(){
         count_lab+=1;
     }
     console.log("Parameters in lab findings:" + count_lab);
+    var total = count_epidem+count_vital+count_lab;
+    var tot_vl = count_lab+count_vital;
     if(age.length != 0 && pd != -1 && ckd != -1 && dm != -1 && htn != -1 && hiv != -1 && imt != -1 && rr.length != 0 && hr.length != 0 && sp.length != 0 && dd.length != 0 && cpk.length != 0 && crp.length != 0 && ldh.length != 0 && tr.length != 0 && fr.length != 0 && alc.length != 0){
         if(count_epidem > 0 && count_vital > 0 && count_lab > 0){
            var modal = document.getElementById("myModal");
            document.getElementById("span1").innerHTML = count_epidem +" "+" "+ "Parameters Crossed Limit";
            document.getElementById("span2").innerHTML = count_vital +" "+" "+ "Parameters Crossed Limit";
            document.getElementById("span3").innerHTML = count_lab +" "+" "+ "Parameters Crossed Limit";
-           var total = count_epidem+count_lab+count_lab;
            console.log("The total number of parameters are high risk:" + total);
            document.getElementById("risk_fact").innerHTML = "Risk Factor is " + total;
            modal.style.display = "block";
@@ -228,12 +229,46 @@ function checkParam(){
                    modal.style.display = "none";
                }
            }
-        }else{
+        }else if(tot_vl == 2 && count_lab != 0 && count_vital != 0){
+            var modal = document.getElementById("myModal2");
+            document.getElementById("smspan1").innerHTML = count_epidem +" "+" "+ "Parameters Crossed Limit";
+            document.getElementById("smspan2").innerHTML = count_vital +" "+" "+ "Parameters Crossed Limit";
+            document.getElementById("smspan3").innerHTML = count_lab +" "+" "+ "Parameters Crossed Limit";
+            console.log("The total number of parameters are high risk:" + total);
+            document.getElementById("rismsk_fact").innerHTML = "Risk Factor is " + total;
+            modal.style.display = "block";
+            var smspan = document.getElementsByClassName("close2")[0];
+            smspan.onclick = function(){
+                modal.style.display = "none";
+            }
+            window.onclick = function(event){
+                if(event.target == modal){
+                    modal.style.display = "none";
+                }
+            }
+        }else if (tot_vl >= 2 || tot_vl >= 2 && (count_lab == 0 || count_vital == 0)){
+            var modal = document.getElementById("myModal");
+            document.getElementById("span1").innerHTML = count_epidem +" "+" "+ "Parameters Crossed Limit";
+            document.getElementById("span2").innerHTML = count_vital +" "+" "+ "Parameters Crossed Limit";
+            document.getElementById("span3").innerHTML = count_lab +" "+" "+ "Parameters Crossed Limit";
+            console.log("The total number of parameters are high risk:" + total);
+            document.getElementById("risk_fact").innerHTML = "Risk Factor is " + total;
+            modal.style.display = "block";
+            var sspan = document.getElementsByClassName("close")[0];
+            sspan.onclick = function(){
+                modal.style.display = "none";
+            }
+            window.onclick = function(event){
+                if(event.target == modal){
+                    modal.style.display = "none";
+                }
+            }
+        }
+        else if (total < 2){
             var modal1 = document.getElementById("myModal1");
             document.getElementById("sspan1").innerHTML = count_epidem + " "+" "+"Parameters Crossed Limit";
             document.getElementById("sspan2").innerHTML = count_vital +" "+" " +"Parameters Crossed Limit";
             document.getElementById("sspan3").innerHTML = count_lab +" "+ " "+ "Parameters Crossed Limit";
-            var total = count_epidem+count_lab+count_lab;
             console.log("The total number of parameters are low risk:" + total);
             document.getElementById("rissk_fact").innerHTML = "Risk Factor is " + total;
             modal1.style.display = "block";
