@@ -17,6 +17,7 @@
     width: 80%;
 }
 .modal-content1 > p{
+    margin-left: 400px;
     font-size: 25px;
     color: green;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -38,12 +39,14 @@
     margin-left: 25px;
 }
 #sspan2{
-    margin-left: 65px;
+    margin-left: 62px;
 }
 #sspan3{
-    margin-left: 25px;
+    margin-left: 35px;
 }
-#rissk_factor{
-    color: red;
+.display_low{
+    margin-left: 370px;
+    font-size: 28px;
+    color: green;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
