@@ -252,7 +252,7 @@ function checkParam(){
             document.getElementById("span2").innerHTML = count_vital +" "+" "+ "Parameters Crossed Limit";
             document.getElementById("span3").innerHTML = count_lab +" "+" "+ "Parameters Crossed Limit";
             console.log("The total number of parameters are high risk:" + total);
-            document.getElementById("risk_fact").innerHTML = "Risk Factor is " + total + "out" + "17";
+            document.getElementById("risk_fact").innerHTML = "Risk Factor is " + total + "out of" + "17";
             modal.style.display = "block";
             var sspan = document.getElementsByClassName("close")[0];
             sspan.onclick = function(){
