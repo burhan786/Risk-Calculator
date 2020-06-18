@@ -162,63 +162,85 @@
         <button type="button" id="sub" onclick="checkParam()">CHECK PARAMETERS</button>
         <button type="button" id ="npat" onclick="newpage()">NEW PATIENT</button>
         <div id="myModal" class="modal">
-        
+
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>PATEINT IS AT HIGH RISK</p>
-              <div class="respa">EPIDEMIOLOGY:
-                  <span id="span1"></span>
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 id="head_hrisk">PATIENT IS AT HIGH RISK</h2>
               </div>
-              <div class="respa">VITAL SIGNS:
-                  <span id="span2"></span>
-              </div>
-              <div class="respa">LAB-FINDINGS:
-                  <span id="span3"></span>
-              </div>
-              <div class="respa">
-                  <span id="risk_fact" class="display_high"></span>
+              <div class="modal-body">
+                <div class="respa">Epidemiology:
+                    <span id="span1"></span>
+                </div>
+                <div class="respa">Vital Signs:
+                    <span id="span2"></span>
+                </div>
+                <div class="respa">Lab-Findings:
+                    <span id="span3"></span>
+                </div>
+            </div>
+              <div class="modal-footer">
+                <div class="respa">
+                    <span id="risk_fact" class="display_high"></span>
+                </div>
               </div>
             </div>
           
           </div>
-        <div id="myModal2" class="modal2">
-        
-            <!-- Modal content -->
-            <div class="modal-content2">
-              <span class="close2">&times;</span>
-              <p>PATEINT IS AT MODERATE RISK</p>
-              <div class="respa">EPIDEMIOLOGY:
-                <span id="smspan1"></span>
-            </div>
-            <div class="respa">VITAL SIGNS:
-                <span id="smspan2"></span>
-            </div>
-            <div class="respa">LAB-FINDINGS:
-                <span id="smspan3"></span>
-            </div>
-                <span id="rismsk_fact" class="display_moderate"></span>
-            </div>
-        </div>
         <div id="myModal1" class="modal1">
-        
+
             <!-- Modal content -->
             <div class="modal-content1">
-              <span class="close1">&times;</span>
-              <p>PATEINT IS AT LOW RISK</p>
-              <div class="respa">EPIDEMIOLOGY:
-                <span id="sspan1"></span>
+              <div class="modal-header1">
+                <span class="close1">&times;</span>
+                <h2 id="head_lrisk">PATIENT IS AT LOW RISK</h2>
+              </div>
+              <div class="modal-body1">
+                <div class="respa">Epidemiology:
+                    <span id="sspan1"></span>
+                </div>
+                <div class="respa">Vital Signs:
+                    <span id="sspan2"></span>
+                </div>
+                <div class="respa">Lab-Findings:
+                    <span id="sspan3"></span>
+                </div>
             </div>
-            <div class="respa">VITAL SIGNS:
-                <span id="sspan2"></span>
+              <div class="modal-footer1">
+                <div class="respa">
+                    <span id="rissk_fact" class="display_low"></span>
+                </div>
+              </div>
             </div>
-            <div class="respa">LAB-FINDINGS:
-                <span id="sspan3"></span>
+          
+          </div>
+          <div id="myModal2" class="modal2">
+
+            <!-- Modal content -->
+            <div class="modal-content2">
+              <div class="modal-header2">
+                <span class="close2">&times;</span>
+                <h2 id="head_mrisk">PATIENT IS AT MODERATE RISK</h2>
+              </div>
+              <div class="modal-body2">
+                <div class="respa">Epidemiology:
+                    <span id="smspan1"></span>
+                </div>
+                <div class="respa">Vital Signs:
+                    <span id="smspan2"></span>
+                </div>
+                <div class="respa">Lab-Findings:
+                    <span id="smspan3"></span>
+                </div>
             </div>
-            <div class="respa">
-                <span id="rissk_fact" class="display_low"></span>
+              <div class="modal-footer2">
+                <div class="respa">
+                    <span id="rismsk_fact" class="display_moderate"></span>
+                </div>
+              </div>
             </div>
-            </div>
+          
           </div>
         
     </body>
