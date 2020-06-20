@@ -20,7 +20,7 @@ function checkHR(){
 }
 function checkSP(){
     sp = document.getElementById("sp").value;
-    if(sp > 90){
+    if(sp < 94){
         document.getElementById("sp").style.borderColor = "red";
     }else{
         document.getElementById("sp").style.borderColor = "black";        

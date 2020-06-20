@@ -219,7 +219,7 @@ function checkParam(){
     if(sp.length == 0){
         document.getElementById("sspo").style.visibility = "visible";
     }
-    else if(sp > 90){
+    else if(sp < 94){
         count_vital+=1;
     }
     console.log("Parameters in vitals" + count_vital);
