@@ -226,7 +226,7 @@ function checkParam(){
     if(dd.length == 0){
         document.getElementById("sdd").style.visibility = "visible";
     }
-    else if(dd > 1000){
+    else if(dd > 1){
         count_lab+=1;
     }
     if(cpk.length == 0){
