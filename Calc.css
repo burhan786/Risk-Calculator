@@ -176,3 +176,9 @@ body{
 /* label{
     border: 1px solid black;
 } */
+.units{
+    margin-left: 310px;
+}
+.measure{
+    margin-left: 35px;
+}

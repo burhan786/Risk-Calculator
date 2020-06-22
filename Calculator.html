@@ -105,46 +105,58 @@
             <div class="lab-findings">
                 <h1 class="head">LABORATORY FINDINGS</h1>
                 <form class="lab">
-                    <br>
-                    <br>
+                    <label class="units">Units</label>
+                    <br><br>
                     <label>
                         D Dimer:
-                        <input type="number" id="dd" onchange="checkDD()"><br>
+                        <input type="number" id="dd" onchange="checkDD()">
+                        <label class="measure">mg/mL</label>
+                        <br>
                         <span class="error" id="sdd">D Dimer Field is Important</span>
                     </label>
                     <br>
                     <br>
                     <label>
                         CPK:
-                        <input type="number" id="cpk" onchange="checkCPK()" ><br>
+                        <input type="number" id="cpk" onchange="checkCPK()" >
+                        <label class="measure">U/L</label>
+                        <br>
                         <span class="error" id="scpk">CPK Field is Important</span>
                     </label>
                     <br>
                     <br>
                     <label>
                         CRP:
-                        <input type="number" id="crp" onchange="checkCRP()"><br>
+                        <input type="number" id="crp" onchange="checkCRP()">
+                        <label class="measure">mg/L</label>
+                        <br>
                         <span class="error" id="scrp">CRP Field is Important</span>
                     </label>
                     <br>
                     <br>
                     <label>
                         LDH:
-                        <input type="number" id="ldh" onchange="checkLDH()" ><br>
+                        <input type="number" id="ldh" onchange="checkLDH()" >
+                        <label class="measure">U/L</label>
+                        <br>
                         <span class="error" id="sldh">LDH Field is Important</span>
                     </label>
                     <br>
                     <br>
                     <label>
                         TROPONIN:
-                        <input type="number" id="tr" onchange="checkTR()"><br>
+                        <input type="number" id="tr" onchange="checkTR()">
+                        <label class="measure">ng/mL</label>
+                        <br>
                         <span class="error" id="str">TROPOPIN Field is Important</span>
                     </label>
                     <br>
                     <br>
                     <label>
                         FERRITIN:
-                        <input type="number" id="fr" onchange="checkFR()"><br>
+                        <input type="number" id="fr" onchange="checkFR()">
+                        <label class="measure">&mu;g/L</label>
+                        <br>
                         <span class="error" id="sfr">FERRITIN Field is Important</span>
                     </label>
                     <br>

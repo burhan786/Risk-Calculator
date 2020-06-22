@@ -4,7 +4,7 @@ var dd,cpk,crp,ldh,tr,fr,alc;
 function checkRR(){
     rr = document.getElementById("rr").value;
     console.log("respiratory rate check:" + rr);
-    if(rr > 25){
+    if(rr > 24){
         document.getElementById("rr").style.borderColor = "red";
     }else{
         document.getElementById("rr").style.borderColor = "black";
@@ -28,7 +28,7 @@ function checkSP(){
 }
 function checkDD(){
     dd = document.getElementById("dd").value;
-    if(dd > 1000){
+    if(dd > 1){
         document.getElementById("dd").style.borderColor = "red";
     }else{
         document.getElementById("dd").style.borderColor = "black";
@@ -95,5 +95,5 @@ function checkAGE(){
     }
 }
 function newpage(){
-    window.location = "index.html";
+    window.location = "Calculator.html";
 }
