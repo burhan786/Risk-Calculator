@@ -10,30 +10,37 @@ var total_param = 17;
 function NA_DD(){
     dd_btn = 1;
     total_param-=1;
+    document.getElementById("btn_dd").style.backgroundColor = 'yellow';
 }
 function NA_CRP(){
     crp_btn = 1;
     total_param-=1;
+    document.getElementById("btn_crp").style.backgroundColor = 'yellow';
 }
 function NA_CPK(){
     cpk_btn = 1;
     total_param-=1;
+    document.getElementById("btn_cpk").style.backgroundColor = 'yellow';
 }
 function NA_LDH(){
     ldh_btn = 1;
     total_param-=1;
+    document.getElementById("btn_ldh").style.backgroundColor = 'yellow';
 }
 function NA_TR(){
     tr_btn = 1;
     total_param-=1;
+    document.getElementById("btn_tr").style.backgroundColor = 'yellow';
 }
 function NA_FR(){
     fr_btn = 1;
     total_param-=1;
+    document.getElementById("btn_fr").style.backgroundColor = 'yellow';
 }
 function NA_ALC(){
     alc_btn = 1;
     total_param-=1;
+    document.getElementById("btn_alc").style.backgroundColor = 'yellow';
 }
 function yesPulmo() {
     pd = 1;
