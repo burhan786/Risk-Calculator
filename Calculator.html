@@ -3,9 +3,11 @@
     <head>
         <title>Risk Progression</title>
         <link rel="stylesheet" href="Calc.css">
+        <link rel="stylesheet" href="alignment_buttons.css">
         <link rel="stylesheet" href="rpage.css">
         <link rel="stylesheet" href="rpage1.css">
         <link rel="stylesheet" href="rpage2.css">
+        <script src="extract_variables.js"></script>
         <script src="validation.js"></script>
         <script src="textvalidate.js"></script>
     </head>
@@ -111,6 +113,7 @@
                         D Dimer:
                         <input type="number" id="dd" onchange="checkDD()">
                         <label class="measure">&mu;g/mL</label>
+                        <button type="button" class="not_app_dd" id="btn_dd" onclick="NA_DD()">N/A</button>
                         <br>
                         <span class="error" id="sdd">D Dimer Field is Important</span>
                     </label>
@@ -120,6 +123,7 @@
                         CPK:
                         <input type="number" id="cpk" onchange="checkCPK()" >
                         <label class="measure">U/L</label>
+                        <button type="button" class="not_app_cpk" id="btn_cpk" onclick="NA_CPK()">N/A</button>
                         <br>
                         <span class="error" id="scpk">CPK Field is Important</span>
                     </label>
@@ -129,6 +133,7 @@
                         CRP:
                         <input type="number" id="crp" onchange="checkCRP()">
                         <label class="measure">mg/L</label>
+                        <button type="button" class="not_app_crp" id="btn_crp" onclick="NA_CRP()">N/A</button>
                         <br>
                         <span class="error" id="scrp">CRP Field is Important</span>
                     </label>
@@ -138,6 +143,7 @@
                         LDH:
                         <input type="number" id="ldh" onchange="checkLDH()" >
                         <label class="measure">U/L</label>
+                        <button type="button" class="not_app_ldh" id="btn_ldh" onclick="NA_LDH()">N/A</button>
                         <br>
                         <span class="error" id="sldh">LDH Field is Important</span>
                     </label>
@@ -147,6 +153,7 @@
                         TROPONIN:
                         <input type="number" id="tr" onchange="checkTR()">
                         <label class="measure">ng/mL</label>
+                        <button type="button" class="not_app_tr" id="btn_tr" onclick="NA_TR()">N/A</button>
                         <br>
                         <span class="error" id="str">TROPOPIN Field is Important</span>
                     </label>
@@ -156,6 +163,7 @@
                         FERRITIN:
                         <input type="number" id="fr" onchange="checkFR()">
                         <label class="measure">&mu;g/L</label>
+                        <button type="button" class="not_app_fr" id="btn_fr" onclick="NA_FR()">N/A</button>
                         <br>
                         <span class="error" id="sfr">FERRITIN Field is Important</span>
                     </label>
@@ -163,7 +171,9 @@
                     <br>
                     <label>
                         ABOSULUTE:  
-                        <input type="number" id="alc" onchange="checkALC()"><br>
+                        <input type="number" id="alc" onchange="checkALC()">
+                        <button type="button" class="not_app" id="btn_alc" onclick="NA_ALC()">N/A</button>
+                        <br>
                         LYMPHOCYTE 
                         COUNT<br>
                         <span class="error" id="salc">Absolute Lymphotic Count Field is Important</span>

@@ -1,6 +1,104 @@
+var age,pd = -1,ckd = -1,dm = -1,htn = -1,hiv = -1,imt = -1;
+
 var rr,hr,sp;
+
 var dd,cpk,crp,ldh,tr,fr,alc;
 
+var dd_btn = 0,cpk_btn = 0,crp_btn = 0,ldh_btn = 0,tr_btn = 0,fr_btn = 0,alc_btn = 0;
+
+function NA_DD(){
+    dd_btn = 1;
+}
+function NA_CRP(){
+    crp_btn = 1;
+}
+function NA_CPK(){
+    cpk_btn = 1;
+}
+function NA_LDH(){
+    ldh_btn = 1;
+}
+function NA_TR(){
+    tr_btn = 1;
+}
+function NA_FR(){
+    fr_btn = 1;
+}
+function NA_ALC(){
+    alc_btn = 1;
+}
+function yesPulmo() {
+    pd = 1;
+    document.getElementById("btn1").style.backgroundColor = "red";
+    document.getElementById("btn2").style.backgroundColor = "#e7e7e7";
+    console.log(pd);
+}
+function noPulmo(){
+    pd = 0;
+    document.getElementById("btn2").style.backgroundColor = "green";
+    document.getElementById("btn1").style.backgroundColor = "#e7e7e7";
+    console.log(pd);
+}
+function yesCKD(){
+    ckd = 1;
+    document.getElementById("btn4").style.backgroundColor = "#e7e7e7";
+    document.getElementById("btn3").style.backgroundColor = "red";
+    console.log(ckd);
+}
+function noCKD(){
+    ckd = 0;
+    document.getElementById("btn3").style.backgroundColor = "#e7e7e7";
+    document.getElementById("btn4").style.backgroundColor = "green";
+    console.log(ckd);
+}
+function yesDM() {
+    dm = 1;
+    document.getElementById("btn5").style.backgroundColor = "red";
+    document.getElementById("btn6").style.backgroundColor = "#e7e7e7";
+    console.log(dm);
+}
+function noDM(){
+    dm = 0;
+    document.getElementById("btn5").style.backgroundColor = "#e7e7e7";
+    document.getElementById("btn6").style.backgroundColor = "green";
+    console.log(dm);
+}
+function yesHTN(){
+    htn = 1;
+    document.getElementById("btn7").style.backgroundColor = "red";
+    document.getElementById("btn8").style.backgroundColor = "#e7e7e7";
+    console.log(htn);
+}
+function noHTN(){
+    htn = 0;
+    document.getElementById("btn7").style.backgroundColor = "#e7e7e7";
+    document.getElementById("btn8").style.backgroundColor = "green";
+    console.log(htn);
+}
+function yesHIV(){
+    hiv = 1;
+    document.getElementById("btn9").style.backgroundColor = "red";
+    document.getElementById("btn10").style.backgroundColor = "#e7e7e7";
+    console.log(hiv);
+}
+function noHIV(){
+    hiv = 0;
+    document.getElementById("btn10").style.backgroundColor = "green";
+    document.getElementById("btn9").style.backgroundColor = "#e7e7e7";
+    console.log(hiv);
+}
+function yesImt(){
+    imt = 1;
+    document.getElementById("btn11").style.backgroundColor = "red";
+    document.getElementById("btn12").style.backgroundColor = "#e7e7e7";
+    console.log(imt);
+}
+function noImt(){
+    imt = 0;
+    document.getElementById("btn12").style.backgroundColor = "green";
+    document.getElementById("btn11").style.backgroundColor = "#e7e7e7";
+    console.log(imt);
+}
 function checkRR(){
     rr = document.getElementById("rr").value;
     console.log("respiratory rate check:" + rr);
@@ -83,7 +181,7 @@ function checkALC(){
     }
 }
 function checkAGE(){
-    var age = document.getElementById("ag3").value;
+    age = document.getElementById("ag3").value;
     console.log("age check parameters:" + age);
     if(age.length < 1){
         document.getElementById("ag3").style.borderColor = "blue";
@@ -94,6 +192,7 @@ function checkAGE(){
         document.getElementById("ag3").style.borderColor = "black";    
     }
 }
+
 function newpage(){
     window.location = "Calculator.html";
 }
