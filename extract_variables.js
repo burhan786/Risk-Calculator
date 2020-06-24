@@ -5,27 +5,35 @@ var rr,hr,sp;
 var dd,cpk,crp,ldh,tr,fr,alc;
 
 var dd_btn = 0,cpk_btn = 0,crp_btn = 0,ldh_btn = 0,tr_btn = 0,fr_btn = 0,alc_btn = 0;
+var total_param = 17;
 
 function NA_DD(){
     dd_btn = 1;
+    total_param-=1;
 }
 function NA_CRP(){
     crp_btn = 1;
+    total_param-=1;
 }
 function NA_CPK(){
     cpk_btn = 1;
+    total_param-=1;
 }
 function NA_LDH(){
     ldh_btn = 1;
+    total_param-=1;
 }
 function NA_TR(){
     tr_btn = 1;
+    total_param-=1;
 }
 function NA_FR(){
     fr_btn = 1;
+    total_param-=1;
 }
 function NA_ALC(){
     alc_btn = 1;
+    total_param-=1;
 }
 function yesPulmo() {
     pd = 1;
