@@ -80,7 +80,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
-@media screen and (min-width:411px )and (max-width:713px){
+/* @media screen and (min-width:400px) and (max-width:800px){
     body{
         background-color: lightcyan;
     }
@@ -169,4 +169,4 @@ body{
         text-align: center;
         margin-left: 20%;
     }
-}
+} */

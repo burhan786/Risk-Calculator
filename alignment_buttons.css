@@ -121,7 +121,7 @@
 .not_app_cpk{
     margin-left: 57px;
 }
-@media screen and (min-width:411px )and (max-width:713px){
+/* @media screen and (max-width:800px )and (min-width:400px){
     #ag3{
         margin-left: 235px;
     }
@@ -215,9 +215,9 @@
         visibility: hidden; 
         color: red;
     }
-    /* label{
+     label{
         border: 1px solid black;
-    } */
+    } 
     .units{
         margin-left: 310px;
     }
@@ -245,4 +245,4 @@
     .not_app_cpk{
         margin-left: 57px;
     }
-}
+} */
