@@ -21,6 +21,7 @@ function Result_High(count_epidem,count_vital,count_lab){
 function Result_Moderate(count_epidem,count_vital,count_lab){
     var total = count_epidem+count_lab+count_vital;
     var res = total/total_param;
+    res = res.toFixed(2);
     var modal = document.getElementById("myModal2");
     document.getElementById("smspan1").innerHTML = count_epidem +" "+" "+ "Parameters Crossed Limit";
     document.getElementById("smspan2").innerHTML = count_vital +" "+" "+ "Parameters Crossed Limit";

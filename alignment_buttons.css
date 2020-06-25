@@ -121,3 +121,128 @@
 .not_app_cpk{
     margin-left: 57px;
 }
+@media screen and (min-width:411px )and (max-width:713px){
+    #ag3{
+        margin-left: 235px;
+    }
+    #btn1{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 74px;
+    }
+    #btn2{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 30px;
+    }
+    #btn3{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 210px;
+    }
+    #btn4{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 30px;
+    }
+    #btn5{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 119px;
+    }
+    #btn6{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 30px;
+    }
+    #btn7{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 211px;
+    }
+    #btn8{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 30px;
+    }
+    #btn9{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 217.5px;
+    }
+    #btn10{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 30px;
+    }
+    #btn11{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left:4.5px;
+    }
+    #btn12{
+        background-color: #e7e7e7; 
+        color: black;
+        margin-left: 30px;
+    }
+    #sub{
+        margin-top: 30px;
+        margin-left: 30%;
+        color: white;
+        background: red;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #npat{
+        margin-top: 30px;
+        margin-left: 35%;
+        color: white;
+        background: green;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .error{
+        visibility: hidden; 
+        color: red;
+    }
+    /* label{
+        border: 1px solid black;
+    } */
+    .units{
+        margin-left: 310px;
+    }
+    .measure{
+        margin-left: 35px;
+    }
+    .not_app{
+        margin-left: 125px;
+    }
+    .not_app_fr{
+        margin-left: 55px;
+    }
+    .not_app_tr{
+        margin-left: 43px;
+    }
+    .not_app_ldh{
+        margin-left: 59px;
+    }
+    .not_app_dd{
+        margin-left: 40px;
+    }
+    .not_app_crp{
+        margin-left: 50px;
+    }
+    .not_app_cpk{
+        margin-left: 57px;
+    }
+}

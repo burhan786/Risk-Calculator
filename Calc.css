@@ -80,3 +80,93 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
+@media screen and (min-width:411px )and (max-width:713px){
+    body{
+        background-color: lightcyan;
+    }
+    .para-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .vital-container{
+        background-color: white;
+        border: 1px solid black;
+        margin-top: 5%;
+        margin-left: 0%;
+        height: 120%;
+        width: 117%;
+    }
+    .vital{
+        margin-left: 5%;
+    }
+    #rr{
+        margin-left: 8px;
+    }
+    #hr{
+        margin-left: 62px;
+    }
+    #sp{
+        margin-left: 119px;
+    }
+    .vital-container > h1{
+        text-align: center;
+    }
+    .lab-findings{
+        background-color: white;
+        border: 1px solid black;
+        margin-top:5% ;
+        width: 117%;
+        margin-left: 0%;
+    }
+    .lab{
+        margin-left: 10px;
+    }
+    #dd{
+        margin-left: 34px;
+    }
+    #cpk{
+        margin-left: 60px;
+    }
+    #crp{
+        margin-left: 60px;
+    }
+    #ldh{
+        margin-left: 59px;
+    }
+    #tr{
+        margin-left: 12px;
+    }
+    #fr{
+        margin-left: 20px;
+    }
+    #alc{
+        margin-left: -2px;
+    }
+    .epidem-container{
+        background-color: white;
+        border: 1px solid  black;
+        width: 117%;
+        height: 120%;
+    }
+    .epidem{
+        margin-left: 3%;
+        font-size: 2.2vmax;
+    }
+    .epidem-container > h1{
+        text-align: center;
+    }
+    .head{
+        text-shadow: red;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+    .heading{
+        font-size: 50px;
+        text-shadow: red;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        margin-left: 20%;
+    }
+}
