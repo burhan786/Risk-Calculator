@@ -1,12 +1,13 @@
 function Result_High(count_epidem,count_vital,count_lab){
     var total = count_epidem+count_lab+count_vital;
-    var res = total/total_param;
+    var res = (total/total_param)*10;
+    res = res.toFixed(1);
     var modal = document.getElementById("myModal");
     document.getElementById("span1").innerHTML = count_epidem +" "+" "+ "Parameters Crossed Limit";
     document.getElementById("span2").innerHTML = count_vital +" "+" "+ "Parameters Crossed Limit";
     document.getElementById("span3").innerHTML = count_lab +" "+" "+ "Parameters Crossed Limit";
     console.log("The total number of parameters are high risk:" + total);
-    document.getElementById("risk_fact").innerHTML = "Risk Factor is " +" "+res;
+    document.getElementById("risk_fact").innerHTML = "Risk Factor is " +" "+res+" "+"on a scale of 1-10";
     modal.style.display = "block";
     var sspan = document.getElementsByClassName("close")[0];
     sspan.onclick = function(){
@@ -20,14 +21,14 @@ function Result_High(count_epidem,count_vital,count_lab){
 }
 function Result_Moderate(count_epidem,count_vital,count_lab){
     var total = count_epidem+count_lab+count_vital;
-    var res = total/total_param;
-    res = res.toFixed(2);
+    var res = (total/total_param)*10;
+    res = res.toFixed(1);
     var modal = document.getElementById("myModal2");
     document.getElementById("smspan1").innerHTML = count_epidem +" "+" "+ "Parameters Crossed Limit";
     document.getElementById("smspan2").innerHTML = count_vital +" "+" "+ "Parameters Crossed Limit";
     document.getElementById("smspan3").innerHTML = count_lab +" "+" "+ "Parameters Crossed Limit";
     console.log("The total number of parameters are Moderate Risk:" + total);
-    document.getElementById("rismsk_fact").innerHTML = "Risk Factor is " +" "+res;
+    document.getElementById("rismsk_fact").innerHTML = "Risk Factor is " +" "+res+" "+"on a scale of 1-10";
     modal.style.display = "block";
     var smspan = document.getElementsByClassName("close2")[0];
     smspan.onclick = function(){
@@ -41,13 +42,14 @@ function Result_Moderate(count_epidem,count_vital,count_lab){
 }
 function Result_Low(count_epidem,count_vital,count_lab){
     var total = count_epidem+count_lab+count_vital;
-    var res = total/total_param;
+    var res = (total/total_param)*10;
+    res = res.toFixed(1);
     var modal1 = document.getElementById("myModal1");
     document.getElementById("sspan1").innerHTML = count_epidem + " "+" "+"Parameters Crossed Limit";
     document.getElementById("sspan2").innerHTML = count_vital +" "+" " +"Parameters Crossed Limit";
     document.getElementById("sspan3").innerHTML = count_lab +" "+ " "+ "Parameters Crossed Limit";
     console.log("The total number of parameters are low risk:" + total);
-    document.getElementById("rissk_fact").innerHTML = "Risk Factor is " + " "+res;
+    document.getElementById("rissk_fact").innerHTML = "Risk Factor is " + " "+res+" "+"on a scale of 1-10";
     modal1.style.display = "block";
     var sspan1 = document.getElementsByClassName("close1")[0];
     sspan1.onclick = function(){
@@ -273,6 +275,6 @@ function checkParam(){
     }
 }
 function newpage(){
-    window.location = "index.html";
+    window.location = "Calculator.html";
 }
 

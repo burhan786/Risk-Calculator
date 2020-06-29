@@ -16,7 +16,7 @@
         <h1 class="heading">RISK CALCULATOR</h1>
         <marquee>-WebSite Designed by Burhanuddin Rangwala-9664875340, Manorath Khanna-9586201006</marquee>
         <div class="para-container">
-            <div class="epidem-container">
+            <div class="epidem-container col-md-6 col-sm-12">
                 <h1 class="head">EPIDEMIOLOGY</h1>
                 <form class="epidem">
                     <br>
@@ -69,16 +69,19 @@
                     <br>
                     <br>
                     <label>
-                        IMMUNOSUPRESSION/TRANSPLANT:
+                        IMMUNOSUPRESSION
                         <button type="button" id="btn11" onclick="yesImt()">Yes</button>
-                        <button type="button" id="btn12" onclick="noImt()">No</button><br>
+                        <button type="button" id="btn12" onclick="noImt()">No</button>
+                        <br>
+                        /TRANSPLANT:
+                        <br>
                         <span class="error" id="simt">Immunosuppression Field is Important</span>
                     </label>
 
                 </form>
 
             </div>
-            <div class="vital-container">
+            <div class="vital-container col-md-6 col-sm-12">
                 <h1 class="head">VITAL SIGNS</h1>
                 <form class="vital">
                     <br>
@@ -105,14 +108,14 @@
                 </form>
 
             </div>
-            <div class="lab-findings">
+            <div class="lab-findings col-md-6 col-sm-12">
                 <h1 class="head">LABORATORY FINDINGS</h1>
                 <form class="lab">
                     <label class="units">Units</label>
                     <br><br>
                     <label>
-                        D Dimer:
-                        <input type="number" id="dd" onchange="checkDD()">
+                        DDimer:
+                        <input type="number" id="dd" onchange="checkDD()" placeholder="Unit:&mu;g/mL">
                         <label class="measure">&mu;g/mL</label>
                         <button type="button" class="not_app_dd" id="btn_dd" onclick="NA_DD()">N/A</button>
                         <br>
@@ -122,7 +125,7 @@
                     <br>
                     <label>
                         CPK:
-                        <input type="number" id="cpk" onchange="checkCPK()" >
+                        <input type="number" id="cpk" onchange="checkCPK()" placeholder="Unit:U/L">
                         <label class="measure">U/L</label>
                         <button type="button" class="not_app_cpk" id="btn_cpk" onclick="NA_CPK()">N/A</button>
                         <br>
@@ -132,7 +135,7 @@
                     <br>
                     <label>
                         CRP:
-                        <input type="number" id="crp" onchange="checkCRP()">
+                        <input type="number" id="crp" onchange="checkCRP()" placeholder="Unit:mg/L">
                         <label class="measure">mg/L</label>
                         <button type="button" class="not_app_crp" id="btn_crp" onclick="NA_CRP()">N/A</button>
                         <br>
@@ -142,7 +145,7 @@
                     <br>
                     <label>
                         LDH:
-                        <input type="number" id="ldh" onchange="checkLDH()" >
+                        <input type="number" id="ldh" onchange="checkLDH()"placeholder="Unit:U/L">
                         <label class="measure">U/L</label>
                         <button type="button" class="not_app_ldh" id="btn_ldh" onclick="NA_LDH()">N/A</button>
                         <br>
@@ -151,8 +154,8 @@
                     <br>
                     <br>
                     <label>
-                        TROPONIN:
-                        <input type="number" id="tr" onchange="checkTR()">
+                        Troponin:
+                        <input type="number" id="tr" onchange="checkTR()" placeholder="Unit:ng/mL">
                         <label class="measure">ng/mL</label>
                         <button type="button" class="not_app_tr" id="btn_tr" onclick="NA_TR()">N/A</button>
                         <br>
@@ -161,8 +164,8 @@
                     <br>
                     <br>
                     <label>
-                        FERRITIN:
-                        <input type="number" id="fr" onchange="checkFR()">
+                        Ferritin:
+                        <input type="number" id="fr" onchange="checkFR()" placeholder="Unit:&mu;g/l">
                         <label class="measure">&mu;g/L</label>
                         <button type="button" class="not_app_fr" id="btn_fr" onclick="NA_FR()">N/A</button>
                         <br>
@@ -171,12 +174,12 @@
                     <br>
                     <br>
                     <label>
-                        ABOSULUTE:  
+                        Absolute:  
                         <input type="number" id="alc" onchange="checkALC()">
                         <button type="button" class="not_app" id="btn_alc" onclick="NA_ALC()">N/A</button>
                         <br>
-                        LYMPHOCYTE 
-                        COUNT<br>
+                        Lymphocyte 
+                        Count<br>
                         <span class="error" id="salc">Absolute Lymphotic Count Field is Important</span>
                     </label>
                 </form>

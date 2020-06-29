@@ -54,7 +54,7 @@
 #btn11{
     background-color: #e7e7e7; 
     color: black;
-    margin-left:4.5px;
+    margin-left:116px;
 }
 #btn12{
     background-color: #e7e7e7; 
@@ -95,7 +95,7 @@
     border: 1px solid black;
 } */
 .units{
-    margin-left: 310px;
+    margin-left: 280px;
 }
 .measure{
     margin-left: 35px;
@@ -121,73 +121,73 @@
 .not_app_cpk{
     margin-left: 57px;
 }
-/* @media screen and (max-width:800px )and (min-width:400px){
+@media (min-width:320px) and (max-width:414px){
     #ag3{
-        margin-left: 235px;
+        margin-left: 120px;
     }
     #btn1{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 74px;
+        margin-left: 30px;
     }
     #btn2{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 30px;
+        margin-left: 6.2%;
     }
     #btn3{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 210px;
+        margin-left: 126px;
     }
     #btn4{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 30px;
+        margin-left: 6.2%;
     }
     #btn5{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 119px;
+        margin-left: 63px;
     }
     #btn6{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 30px;
+        margin-left: 6.2%;
     }
     #btn7{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 211px;
+        margin-left: 128px;
     }
     #btn8{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 30px;
+        margin-left: 6.2%;
     }
     #btn9{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 217.5px;
+        margin-left: 133px;
     }
     #btn10{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 30px;
+        margin-left: 6.2%;
     }
     #btn11{
         background-color: #e7e7e7; 
         color: black;
-        margin-left:4.5px;
+        margin-left: 62px;
     }
     #btn12{
         background-color: #e7e7e7; 
         color: black;
-        margin-left: 30px;
+        margin-left: 6.2%;
     }
     #sub{
-        margin-top: 30px;
-        margin-left: 30%;
+        margin-top: 2%;
+        margin-left: 55px;
         color: white;
         background: red;
         padding: 15px 32px;
@@ -199,8 +199,8 @@
         cursor: pointer;
     }
     #npat{
-        margin-top: 30px;
-        margin-left: 35%;
+        margin-top: 2%;
+        margin-left: 85px;
         color: white;
         background: green;
         padding: 15px 32px;
@@ -215,34 +215,36 @@
         visibility: hidden; 
         color: red;
     }
-     label{
-        border: 1px solid black;
-    } 
+    label{
+        font-size: 0.7rem;
+    }
     .units{
-        margin-left: 310px;
+        display: none;
+        margin-left: 65%;
     }
     .measure{
-        margin-left: 35px;
+        display: none;
+        margin-left: 7%;
     }
     .not_app{
-        margin-left: 125px;
+        margin-left: 30px;
     }
     .not_app_fr{
-        margin-left: 55px;
+        margin-left: 29.8px;
     }
     .not_app_tr{
-        margin-left: 43px;
+        margin-left: 29.4px;
     }
     .not_app_ldh{
-        margin-left: 59px;
+        margin-left: 29px;
     }
     .not_app_dd{
-        margin-left: 40px;
+        margin-left: 30px;
     }
     .not_app_crp{
-        margin-left: 50px;
+        margin-left: 8.8%;
     }
     .not_app_cpk{
-        margin-left: 57px;
+        margin-left: 30px;
     }
-} */
+}
