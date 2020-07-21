@@ -275,6 +275,6 @@ function checkParam(){
     }
 }
 function newpage(){
-    window.location = "Calculator.html";
+    window.location = "index.html";
 }
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Give me Your Descriotion</title>
+        <link rel="stylesheet" type="text/css" href="logindesc.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src = "loginvalidate.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="Image-container">
+                <img src="Hospital.jpg" id="img1">
+                <div class="Center_txt">DETAILS</div>
+            </div>
+            <div class="form-container">
+                <form>
+                    <label>
+                        PATIENT NAME:
+                        <input type="text" name="name" placeholder="Patient Name *" id="pname">
+                        <span class="error" id="spnm">PLEASE ENTER PATIENT NAME</span>
+                    </label>
+                    <br>
+                    <br>
+                    <label id="laid">
+                        PATIENT ID:
+                        <input type = 'number' name='e-address'placeholder='Patient Id *' id="pid">
+                        <span class="error" id="ptid">PLEASE ENTER PATIENT ID</span>
+                    </label>
+                    <br>
+                    <button type="button" id="submit" onclick="lvalidate()"> SUBMIT </button>
+                </form>
+            </div>
+        </div>
+        <marquee>-WebSite Designed by Burhanuddin Rangwala-9664875340,Manorath Khanna-9586201006</marquee>
+    </body>
+</html>
