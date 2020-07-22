@@ -1,13 +1,15 @@
-  
 body{
-    background-color: #DCDCDC;
+    background-color: lightcyan;
 }
 .para-container{
     display: flex;
 }
+::placeholder{
+    color: white;
+}
 .vital-container{
     background-color: white;
-    border-radius: 15px;
+    border: 1px solid black;
     margin-left: 10px;
     width: 400px;
 }
@@ -28,7 +30,7 @@ body{
 }
 .lab-findings{
     background-color: white;
-    border-radius: 15px;
+    border: 1px solid black;
     margin-left: 10px;
     width: 550px;
 }
@@ -56,18 +58,9 @@ body{
 #alc{
     margin-left: 14px;
 }
-.epidem-container:hover{
-    box-shadow:5px 10px 10px darkgray;
-}
-.vital-container:hover{
-    box-shadow:5px 10px 10px darkgray;
-}
-.lab-findings:hover{
-    box-shadow:5px 10px 10px darkgray;
-}
 .epidem-container{
     background-color: white;
-    border-radius: 15px;
+    border: 1px solid  black;
     width: 500px;
     height: 528px;
 }
@@ -78,17 +71,18 @@ body{
     text-align: center;
 }
 .head{
-    /* text-shadow: red; */
-    color: blue;
+    text-shadow: red;
+    color: red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
 .heading{
     font-size: 50px;
     text-shadow: red;
-    color: blue;
+    color: red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+
 }
 @media (min-width:320px) and (max-width:414px){
     .para-container{
