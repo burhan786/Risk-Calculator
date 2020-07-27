@@ -121,7 +121,125 @@ pre{
     text-align: center;
 
 }
-@media (min-width:320px) and (max-width:414px){
+@media (-webkit-min-device-pixel-ratio :2){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        position: absolute;
+    }
+    #contact{
+        margin-left: 10px;
+        width: auto;
+    }
+    .text-container{
+        position: absolute;
+        top: 8.5%;
+        background-color: white;
+        height: 260px;
+        width: auto;
+        background: rgba(255, 255, 255, 0.4);
+    }
+    .Center_txt{
+        margin-top: 8%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .information{
+        box-shadow: 0 0 15px;
+        background-color: white;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 15px;
+    }
+    .para-container{
+        display: flex;
+        flex-direction: column;
+    }
+    ::placeholder{
+        color: dimgrey;
+    }
+    .epidem-container{
+        background-color: white;
+        border: 1px solid  black;
+        width: 100%;
+        margin-left: 0%;
+        height: 30%;
+    }
+    .epidem{
+        margin-left: 10px;
+    }
+    .epidem-container > h1{
+        text-align: center;
+    }
+    .head{
+        text-shadow: red;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+    .heading{
+        font-size: 50px;
+        text-shadow: red;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+    .vital-container{
+        background-color: white;
+        border: 1px solid black;
+        margin-top: 1%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .vital{
+        margin-left: 3%;
+    }
+    #rr{
+        margin-left: 2px;
+    }
+    #hr{
+        margin-left: 40px;
+    }
+    #sp{
+        margin-left: 82px;
+    }
+    .vital-container > h1{
+        text-align: center;
+    }
+    .lab-findings{
+        background-color: white;
+        border: 1px solid black;
+        margin-top: 1%;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .lab{
+        margin-left: 10px;
+    }
+    #dd{
+        margin-left: 5px;
+    }
+    #cpk{
+        margin-left: 20px;
+    }
+    #crp{
+        margin-left: 20px;
+    }
+    #ldh{
+        margin-left: 20px;
+    }
+    #tr{
+        margin-left: 2px;
+    }
+    #fr{
+        margin-left: 10px;
+    }
+    #alc{
+        margin-left: 3px;
+    }
+
+}
+@media (-webkit-min-device-pixel-ratio :3){
     *{
         box-sizing: border-box;
     }
