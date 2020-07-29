@@ -6,6 +6,12 @@ h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     opacity: 1.5;
 }
+a:visited{
+    color: black;
+}
+a:hover{
+    color:red;
+}
 pre{
     white-space: pre-wrap;
 }
