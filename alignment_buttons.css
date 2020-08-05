@@ -100,38 +100,38 @@
     border: 1px solid black;
 } */
 .units{
-    margin-left: 280px;
+    margin-left: 285px;
 }
 .measure{
     margin-left: 35px;
 }
 .not_app{
     background-color: #e7e7e7;
-    margin-left: 125px;
+    margin-left: 124px;
 }
 .not_app_fr{
     background-color: #e7e7e7;
-    margin-left: 55px;
+    margin-left: 54px;
 }
 .not_app_tr{
     background-color: #e7e7e7;
-    margin-left: 43px;
+    margin-left: 40px;
 }
 .not_app_ldh{
     background-color: #e7e7e7;
-    margin-left: 59px;
+    margin-left: 56px;
 }
 .not_app_dd{
     background-color: #e7e7e7;
-    margin-left: 40px;
+    margin-left: 37px;
 }
 .not_app_crp{
     background-color: #e7e7e7;
-    margin-left: 50px;
+    margin-left: 49px;
 }
 .not_app_cpk{
     background-color: #e7e7e7;
-    margin-left: 57px;
+    margin-left: 56px;
 }
 @media (-webkit-min-device-pixel-ratio :2) and (-webkit-max-device-pixel-ratio:2.9){
     #ag3{
