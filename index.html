@@ -31,57 +31,58 @@
                 <form class="epidem">
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         Age:           
                         <input type = "number" id="ag3" onchange="checkAGE()"><br>
                         <span class="error" id="sage">Age Field is Important</span>
                     </label>
                     <br>
                     <br>
-                  <label>
+                  <label class="container">
                     H/O PULMONARY DISEASE:
-                    <button type="button" id="btn1" onclick="yesPulmo()">Yes</button>
-                    <button type="button" id="btn2" onclick="noPulmo()">No</button><br>
+                    <input type="checkbox" id="pd">
+                    <span class="checkmark" onclick="checkPD()"></span>
+                    <br>
                     <span class="error" id="spul">Pulmonary Field is Important</span>
                   </label>
                     <br>  
                     <br>
-                    <label>
+                    <label class="container">
                         H/O CKD:
-                        <button type="button" id="btn3" onclick="yesCKD()">Yes</button>
-                        <button type="button" id="btn4" onclick="noCKD()">No</button><br>
+                        <input type="checkbox" id="ckd">
+                        <span class="checkmark" onclick="checkCKD()"></span><br>
                         <span class="error" id="sckd">CKD Field is Important</span>
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="container">
                         H/O DM/(HbA1c > 7.6):
-                        <button type="button" id="btn5" onclick="yesDM()">Yes</button>
-                        <button type="button" id="btn6" onclick="noDM()">No</button><br>
+                        <input type="checkbox" id="dm">
+                        <span class="checkmark" onclick="checkDM()"></span><br>
                         <span class="error" id="sdm">DM Field is Important</span>
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="container">
                         H/O HTN:
-                        <button type="button" id="btn7" onclick="yesHTN()">Yes</button>
-                        <button type="button" id="btn8" onclick="noHTN()">No</button><br>
+                        <input type="checkbox" id="htn">
+                        <span class="checkmark" onclick="checkHTN()"></span><br>
                         <span class="error" id="shtn">HTN Field is Important</span>
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="container">
                         H/O HIV:
-                        <button type="button" id="btn9" onclick="yesHIV()">Yes</button>
-                        <button type="button" id="btn10" onclick="noHIV()">No</button><br>
+                        <input type="checkbox" id="hiv">
+                        <span class="checkmark" onclick="checkHIV()"></span><br>
                         <span class="error" id="shiv">HIV Field is Important</span>
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="container">
                         IMMUNOSUPRESSION
-                        <button type="button" id="btn11" onclick="yesImt()">Yes</button>
-                        <button type="button" id="btn12" onclick="noImt()">No</button>
+                        <input type="checkbox" id="imt">
+                        <span class="checkmark" onclick="checkIMT()"></span>
                         <br>
                         /TRANSPLANT:
                         <br>
@@ -96,21 +97,21 @@
                 <form class="vital">
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         RESPIRATORY RATE:
                         <input type="number" id="rr" onchange="checkRR()"><br>
                         <span class="error" id="srr">RESPIRATORY RATE Field is Important</span>
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         HEART RATE:
                         <input type="number" id="hr" onchange="checkHR()"><br>
                         <span class="error" id="shr">HEARTRATE Field is Important</span>
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         SPO2:
                         <input type="number" id="sp" onchange="checkSP()"><br>
                         <span class="error" id="sspo">SPO2 Field is Important</span>
@@ -123,7 +124,7 @@
                 <form class="lab">
                     <label class="units">Units</label>
                     <br><br>
-                    <label>
+                    <label class="para_name">
                         DDimer:
                         <input type="number" id="dd" onchange="checkDD()" placeholder="Unit:&mu;g/mL">
                         <label class="measure">&mu;g/mL</label>
@@ -133,7 +134,7 @@
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         CPK:
                         <input type="number" id="cpk" onchange="checkCPK()" placeholder="Unit:U/L">
                         <label class="measure">U/L</label>
@@ -143,7 +144,7 @@
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         CRP:
                         <input type="number" id="crp" onchange="checkCRP()" placeholder="Unit:mg/L">
                         <label class="measure">mg/L</label>
@@ -153,7 +154,7 @@
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         LDH:
                         <input type="number" id="ldh" onchange="checkLDH()"placeholder="Unit:U/L">
                         <label class="measure">U/L</label>
@@ -163,7 +164,7 @@
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         Troponin:
                         <input type="number" id="tr" onchange="checkTR()" placeholder="Unit:ng/mL">
                         <label class="measure">ng/mL</label>
@@ -173,7 +174,7 @@
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         Ferritin:
                         <input type="number" id="fr" onchange="checkFR()" placeholder="Unit:&mu;g/l">
                         <label class="measure">&mu;g/L</label>
@@ -183,7 +184,7 @@
                     </label>
                     <br>
                     <br>
-                    <label>
+                    <label class="para_name">
                         Absolute:  
                         <input type="number" id="alc" onchange="checkALC()">
                         <button type="button" class="not_app" id="btn_alc" onclick="NA_ALC()">N/A</button>

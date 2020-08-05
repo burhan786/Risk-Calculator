@@ -44,6 +44,9 @@ pre{
 ::placeholder{
     color: white;
 }
+.para_name{
+    font-size: 17px;
+}
 .vital-container{
     background-color: white;
     box-shadow: 0 0 15px #999;
@@ -104,7 +107,7 @@ pre{
     -moz-box-shadow: 0 0 5px #999;
     -webkit-box-shadow: 0 0 5px #999;
     box-shadow: 0 0 15px #999;
-    height: 528px;
+    height: 620px;
     margin-left: 2px;
 }
 .epidem{
@@ -114,15 +117,15 @@ pre{
     text-align: center;
 }
 .head{
-    text-shadow: red;
     color: red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
 .heading{
+    margin-top: 0px;
     font-size: 50px;
-    text-shadow: red;
     color: red;
+    /* text-shadow: 5px 5px blue; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 

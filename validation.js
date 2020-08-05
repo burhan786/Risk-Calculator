@@ -84,40 +84,22 @@ function checkParam(){
         document.getElementById("ag3").style.borderColor = "red";
         count_epidem+=1;
     }
-    if(pd == -1){
-        document.getElementById("spul").style.visibility = "visible";
-    }
-    else if(pd == 1){
+    if(pd == 1){
         count_epidem+=1;
     }
-    if(ckd == -1){
-        document.getElementById("sckd").style.visibility = "visible";
-    }
-    else if(ckd == 1){
+    if(ckd == 1){
         count_epidem+=1;
     }
-    if(dm == -1){
-        document.getElementById("sdm").style.visibility = "visible";
-    }
-    else if(dm == 1){
+    if(dm == 1){
         count_epidem+=1;
     }
-    if(htn == -1){
-        document.getElementById("shtn").style.visibility = "visible";
-    }
-    else if(htn == 1){
+    if(htn == 1){
         count_epidem+=1;
     }
-    if(hiv == -1){
-        document.getElementById("shiv").style.visibility = "visible";
-    }
-    else if(hiv == 1){
+    if(hiv == 1){
         count_epidem+=1;
     }
-    if(imt == -1){
-        document.getElementById("simt").style.visibility = "visible";
-    }
-    else if(imt == 1){
+    if(imt == 1){
         count_epidem+=1;
     }
     console.log("Parameters in epidem" + count_epidem);
@@ -194,12 +176,6 @@ function checkParam(){
     console.log("Total Parameters:" + total);
     var tot_vl = count_lab+count_vital;
     if(age != null){
-        if(pd != -1){
-            if(ckd!= -1){
-                if(dm != -1){
-                    if(htn != -1){
-                        if(hiv != -1){
-                            if(imt != -1){
                                 if(rr != null){
                                     if(hr != null){
                                         if(sp != null){
@@ -252,29 +228,9 @@ function checkParam(){
                                 }else{
                                     window.alert("Please specify the value of Respiratory Rate");
                                 }
-                            }else{
-                                window.alert("Please specify ImmunoSuprresion is present or not");
-                            }
-                        }else{
-                            window.alert("Please specify HIV is present or not");
-                        }
-                    }else{
-                        window.alert("Please specify HTN is present or not");
-                    }
-                }else{
-                    window.alert("Please specify DM is present or not");
-                }
-            }else{
-                window.alert("Please specify CKD is present or not");
-            }
-        }else{
-            window.alert("Please specify Pulmonary Disesase is present or not");
-        }
-    }else{
-        window.alert("Please specify age");
-    }
+}
+
 }
 function newpage(){
     window.location = "index.html";
 }
-

@@ -1,4 +1,4 @@
-var age,pd = -1,ckd = -1,dm = -1,htn = -1,hiv = -1,imt = -1;
+var age,pd = 0,ckd = 0,dm = 0,htn = 0,hiv = 0,imt = 0,cpd = 1,cckd = 1,cdm = 1,chtn = 1,chiv = 1,cimt = 1;
 
 var rr,hr,sp;
 
@@ -101,77 +101,65 @@ function NA_ALC(){
     }
   
 }
-function yesPulmo() {
-    pd = 1;
-    document.getElementById("btn1").style.backgroundColor = "red";
-    document.getElementById("btn2").style.backgroundColor = "#e7e7e7";
-    console.log(pd);
+function checkPD(){
+    if(cpd < 2){
+        cpd++;
+        pd = 1;
+    }else{
+        cpd = 1;
+        pd = 0;
+    }
+    console.log("pd: " + pd);
 }
-function noPulmo(){
-    pd = 0;
-    document.getElementById("btn2").style.backgroundColor = "green";
-    document.getElementById("btn1").style.backgroundColor = "#e7e7e7";
-    console.log(pd);
+function checkCKD(){
+    if(cckd < 2){
+        cckd++;
+        ckd = 1;
+    }else{
+        cckd = 1;
+        ckd = 0;
+    }
+    console.log("ckd: " + ckd);
 }
-function yesCKD(){
-    ckd = 1;
-    document.getElementById("btn4").style.backgroundColor = "#e7e7e7";
-    document.getElementById("btn3").style.backgroundColor = "red";
-    console.log(ckd);
+function checkDM(){
+    if(cdm < 2){
+        cdm++;
+        dm = 1;
+    }else{
+        cdm = 1;
+        dm = 0;
+    }
+    console.log("dm: " + dm);
 }
-function noCKD(){
-    ckd = 0;
-    document.getElementById("btn3").style.backgroundColor = "#e7e7e7";
-    document.getElementById("btn4").style.backgroundColor = "green";
-    console.log(ckd);
+function checkHTN(){
+    if(chtn < 2){
+        chtn++;
+        htn = 1;
+    }else{
+        chtn = 1;
+        htn = 0;
+    }
+    console.log("htn: " + htn);
 }
-function yesDM() {
-    dm = 1;
-    document.getElementById("btn5").style.backgroundColor = "red";
-    document.getElementById("btn6").style.backgroundColor = "#e7e7e7";
-    console.log(dm);
+function checkHIV(){
+    if(chiv < 2){
+        chiv++;
+        hiv = 1;
+    }else{
+        chiv = 1;
+        hiv = 0;
+    }
+    console.log("hiv: " + hiv);
 }
-function noDM(){
-    dm = 0;
-    document.getElementById("btn5").style.backgroundColor = "#e7e7e7";
-    document.getElementById("btn6").style.backgroundColor = "green";
-    console.log(dm);
-}
-function yesHTN(){
-    htn = 1;
-    document.getElementById("btn7").style.backgroundColor = "red";
-    document.getElementById("btn8").style.backgroundColor = "#e7e7e7";
-    console.log(htn);
-}
-function noHTN(){
-    htn = 0;
-    document.getElementById("btn7").style.backgroundColor = "#e7e7e7";
-    document.getElementById("btn8").style.backgroundColor = "green";
-    console.log(htn);
-}
-function yesHIV(){
-    hiv = 1;
-    document.getElementById("btn9").style.backgroundColor = "red";
-    document.getElementById("btn10").style.backgroundColor = "#e7e7e7";
-    console.log(hiv);
-}
-function noHIV(){
-    hiv = 0;
-    document.getElementById("btn10").style.backgroundColor = "green";
-    document.getElementById("btn9").style.backgroundColor = "#e7e7e7";
-    console.log(hiv);
-}
-function yesImt(){
-    imt = 1;
-    document.getElementById("btn11").style.backgroundColor = "red";
-    document.getElementById("btn12").style.backgroundColor = "#e7e7e7";
-    console.log(imt);
-}
-function noImt(){
-    imt = 0;
-    document.getElementById("btn12").style.backgroundColor = "green";
-    document.getElementById("btn11").style.backgroundColor = "#e7e7e7";
-    console.log(imt);
+function checkIMT(){
+    if(cimt < 2){
+        cimt++;
+        imt = 1;
+    }else{
+        cimt = 1;
+        imt = 0;
+    }
+    console.log("imt: " + imt);
 }
 function checkRR(){
     rr = document.getElementById("rr").value;
