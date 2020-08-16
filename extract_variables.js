@@ -2,12 +2,12 @@ var age,pd = 0,ckd = 0,dm = 0,htn = 0,hiv = 0,imt = 0,cpd = 1,cckd = 1,cdm = 1,c
 
 var rr,hr,sp;
 
-var dd,cpk,crp,ldh,tr,fr,alc;
+var dd,cpk,crp,ldh,tr,fr,alc,ct,apg;
 
-var dd_btn = 0,cpk_btn = 0,crp_btn = 0,ldh_btn = 0,tr_btn = 0,fr_btn = 0,alc_btn = 0;
-var total_param = 17;
+var dd_btn = 0,cpk_btn = 0,crp_btn = 0,ldh_btn = 0,tr_btn = 0,fr_btn = 0,alc_btn = 0,ct_btn = 0,apg_btn = 0;
+var total_param = 19;
 
-var count_dd=1,count_crp=1,count_cpk=1,count_ldh=1,count_tr=1,count_fr=1,count_alc=1;
+var count_dd=1,count_crp=1,count_cpk=1,count_ldh=1,count_tr=1,count_fr=1,count_alc=1,count_ct = 1,count_apg = 1;
 
 function NA_DD(){
     if(count_dd<2){
@@ -98,6 +98,34 @@ function NA_ALC(){
         total_param++;
         alc_btn = 0;
         document.getElementById("btn_alc").style.backgroundColor = '#e7e7e7';
+    }
+  
+}
+function NA_CT(){
+    if(count_ct<2){
+        count_ct++;
+        ct_btn = 1;
+        total_param-=1;
+        document.getElementById("btn_ct").style.backgroundColor = 'yellow';
+    }else{
+        count_ct = 1;
+        total_param++;
+        ct_btn = 0;
+        document.getElementById("btn_ct").style.backgroundColor = '#e7e7e7';
+    }
+  
+}
+function NA_APG(){
+    if(count_apg<2){
+        count_apg++;
+        apg_btn = 1;
+        total_param-=1;
+        document.getElementById("btn_apg").style.backgroundColor = 'yellow';
+    }else{
+        count_apg = 1;
+        total_param++;
+        apg_btn = 0;
+        document.getElementById("btn_apg").style.backgroundColor = '#e7e7e7';
     }
   
 }
@@ -240,6 +268,22 @@ function checkALC(){
         document.getElementById("alc").style.borderColor = "red";
     }else{
         document.getElementById("alc").style.borderColor = "black";
+    }
+}
+function checkCT(){
+    ct = document.getElementById("ct").value;
+    if(ct > 4){
+        document.getElementById("ct").style.borderColor = "red";
+    }else{
+        document.getElementById("ct").style.borderColor = "black";
+    }
+}
+function checkAPG(){
+    apg = document.getElementById("apg").value;
+    if(apg < 150){
+        document.getElementById("apg").style.borderColor = "red";
+    }else{
+        document.getElementById("apg").style.borderColor = "black";
     }
 }
 function checkAGE(){

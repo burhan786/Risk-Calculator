@@ -75,6 +75,8 @@ function checkParam(){
     console.log("TROPOPIN:" + tr);
     console.log("FERRITIN:" + fr);
     console.log("alc" + alc);
+    console.log("ct" + ct);
+    console.log("apg" + apg);
     if (age == null){
         var z = document.getElementById("sage");
         console.log(z.value);
@@ -171,66 +173,92 @@ function checkParam(){
     else if( alc != null && alc < 0.8){
         count_lab+=1;
     }
+    if(ct == null && ct_btn == 0){
+        document.getElementById("salc").innerHTML = "CT(Corad Score) Count is needed or press N/A";
+        document.getElementById("salc").style.visibility = "visible";
+    }
+    else if( ct != null && ct > 4){
+        count_lab+=1;
+    }
+    if(apg == null && apg_btn == 0){
+        document.getElementById("salc").innerHTML = "APG(P/F Ratio) Count is needed or press N/A";
+        document.getElementById("salc").style.visibility = "visible";
+    }
+    else if( apg != null && apg < 150){
+        count_lab+=1;
+    }
     console.log("Parameters in lab findings:" + count_lab);
     var total = count_epidem+count_vital+count_lab;
-    console.log("Total Parameters:" + total);
+    console.log("Total Parameters out of Range:" + total);
+    console.log("Total Parameters considered : " + total_param);
     var tot_vl = count_lab+count_vital;
     if(age != null){
-                                if(rr != null){
-                                    if(hr != null){
-                                        if(sp != null){
-                                            if(dd != null || (dd == null && dd_btn == 1)){
-                                                if(cpk != null || (cpk == null && cpk_btn == 1)){
-                                                    if(crp != null || (crp == null && crp_btn == 1)){
-                                                        if(ldh != null || (ldh == null && ldh_btn == 1)){
-                                                            if(tr != null || (tr == null && tr_btn == 1)){
-                                                                if(fr != null || (fr == null && fr_btn == 1)){
-                                                                    if(alc != null || (alc == null && alc_btn == 1)){
-                                                                        if(count_epidem > 0 && count_vital > 0 && count_lab > 0){
-                                                                            Result_High(count_epidem,count_vital,count_lab);
-                                                                        }else if(tot_vl == 2 && count_lab != 0 && count_vital != 0){
-                                                                            Result_Moderate(count_epidem,count_vital,count_lab);
-                                                                        }else if (tot_vl >= 2){
-                                                                            Result_High(count_epidem,count_vital,count_lab);
-                                                                        }else if(count_epidem > 0 && (count_lab == 1 || count_vital == 1)){
-                                                                            Result_Moderate(count_epidem,count_vital,count_lab);
-                                                                        }
-                                                                        else if (total < 2 || (count_epidem > 0 && count_lab == 0 && count_vital == 0)){
-                                                                            Result_Low(count_epidem,count_vital,count_lab);
-                                                                        }
-                                                                    }else{
-                                                                        window.alert("Please specify the value of absolute lymphotic count and if not needed press N/A");
-                                                                    }
-                                                                }else{
-                                                                    window.alert("PLease specify the value of ferritin and if not needed press N/A");
-                                                                }
-                                                            }else{
-                                                                window.alert("Please specify the value of Tropopin and if not needed press N/A");
-                                                            }
-                                                        }else{
-                                                            window.alert("Please specify the value of LDH and if not needed press N/A");
+        if(rr != null){
+            if(hr != null){
+                if(sp != null){
+                    if(dd != null || (dd == null && dd_btn == 1)){
+                        if(cpk != null || (cpk == null && cpk_btn == 1)){
+                            if(crp != null || (crp == null && crp_btn == 1)){
+                                if(ldh != null || (ldh == null && ldh_btn == 1)){
+                                    if(tr != null || (tr == null && tr_btn == 1)){
+                                        if(fr != null || (fr == null && fr_btn == 1)){
+                                            if(alc != null || (alc == null && alc_btn == 1)){
+                                                if(ct != null || (ct == null && ct_btn == 1)){
+                                                    if(apg != null || (apg == null && apg_btn == 1)){
+                                                        if(count_epidem > 0 && count_vital > 0 && count_lab > 0){
+                                                            Result_High(count_epidem,count_vital,count_lab);
+                                                        }else if(tot_vl == 2 && count_lab != 0 && count_vital != 0){
+                                                            Result_Moderate(count_epidem,count_vital,count_lab);
+                                                        }else if (tot_vl >= 2){
+                                                            Result_High(count_epidem,count_vital,count_lab);
+                                                        }else if(count_epidem > 0 && (count_lab == 1 || count_vital == 1)){
+                                                            Result_Moderate(count_epidem,count_vital,count_lab);
+                                                        }
+                                                        else if (total < 2 || (count_epidem > 0 && count_lab == 0 && count_vital == 0)){
+                                                            Result_Low(count_epidem,count_vital,count_lab);
                                                         }
                                                     }else{
-                                                        window.alert("Please specify the value of CRP and if not neede press N/A");
+                                                        window.alert("Please Provide APG(P/F) ratio or Press NA");
                                                     }
                                                 }else{
-                                                    window.alert("Please specify the value of CPK and if not neede press N/A");
+                                                    window.alert("Please Provise CT(Corad Score) or Press NA");
                                                 }
                                             }else{
-                                                window.alert("Please SPecify the value of D Dimer and if not needed press N/A");
+                                                window.alert("Plear Provide ALC value or Press NA");
                                             }
                                         }else{
-                                            window.alert("Please specify the value of Saturation of Oxygen and if not neede press N/A");
+                                            window.alert("Please Provide Ferritin value or Press NA");
                                         }
                                     }else{
-                                        window.alert("Please specify the value of Heart Rate");
+                                        window.alert("Please Provide Tropopin value or Press NA");
                                     }
                                 }else{
-                                    window.alert("Please specify the value of Respiratory Rate");
+                                    window.alert("Please Provide LDH value or Press NA");
                                 }
+                            }else{
+                                window.alert("Please Provide CRP value or Press NA");
+                            }
+                        }else{
+                            window.alert("Please Provide CPK value or Press NA");
+                        }
+                    }else{
+                        window.alert("Please Provide D Dimer value or Press NA");
+                    }
+                }else{
+                    window.alert("Please Provide Oxygen Saturation value");
+                }
+            }else{
+                window.alert("Please Provide Heart Rate value");
+            }
+        }else{
+            window.alert("Please Provide Respiratory Rate value");
+        }
+    }else{
+        window.alert("Please Provide Age");
+    }
 }
 
-}
+
 function newpage(){
     window.location = "index.html";
 }

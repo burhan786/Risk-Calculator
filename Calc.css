@@ -100,6 +100,12 @@ pre{
 #alc{
     margin-left: 12px;
 }
+#ct{
+    margin-left: 7px;
+}
+#apg{
+    margin-left: 40px;
+}
 .epidem-container{
     background-color: white;
     border-radius: 20px;
@@ -107,7 +113,7 @@ pre{
     -moz-box-shadow: 0 0 5px #999;
     -webkit-box-shadow: 0 0 5px #999;
     box-shadow: 0 0 15px #999;
-    height: 620px;
+    /* height: 620px; */
     margin-left: 2px;
 }
 .epidem{
@@ -246,6 +252,12 @@ pre{
     #alc{
         margin-left: 3px;
     }
+    #ct{
+        margin-left: 2px;
+    }
+    #apg{
+        margin-left: 23px;
+    }
 
 }
 @media (-webkit-min-device-pixel-ratio :3){
@@ -363,5 +375,11 @@ pre{
     }
     #alc{
         margin-left: 20px;
+    }
+    #ct{
+        margin-left: 16px;
+    }
+    #apg{
+        margin-left: 43px;
     }
 }

@@ -133,6 +133,14 @@
     background-color: #e7e7e7;
     margin-left: 56px;
 }
+.not_ct{
+    background-color: #e7e7e7;
+    margin-left:124px ;
+}
+.not_apg{
+    background-color: #e7e7e7;
+    margin-left: 122px;
+}
 @media (-webkit-min-device-pixel-ratio :2) and (-webkit-max-device-pixel-ratio:2.9){
     #ag3{
         margin-left: 60px;
@@ -212,6 +220,12 @@
     }
     .not_app_cpk{
         margin-left: 23px;
+    }
+    .not_ct{
+        margin-left:16px ;
+    }
+    .not_apg{
+        margin-left: 20px;
     }
 }
 @media (-webkit-min-device-pixel-ratio :3){
@@ -293,5 +307,11 @@
     }
     .not_app_cpk{
         margin-left: 30px;
+    }
+    .not_ct{
+        margin-left:30px ;
+    }
+    .not_apg{
+        margin-left: 32px;
     }
 }

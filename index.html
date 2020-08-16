@@ -192,6 +192,18 @@
                         Lymphocyte 
                         Count<br>
                         <span class="error" id="salc">Absolute Lymphotic Count Field is Important</span>
+                    </label><br>
+                    <label class="para_name">
+                        CT SCAN
+                        <input type="number" id="ct" onchange="checkCT()">
+                        <button type="button" id="btn_ct" class="not_ct" onclick="NA_CT()">N/A</button><br>
+                        (Corad Score)
+                    </label><br><br>
+                    <label class="para_name">
+                        APG:
+                        <input type="number" id="apg" onchange="checkAPG()">
+                        <button type="button" class="not_apg" id="btn_apg" onclick="NA_APG()">N/A</button><br>
+                        (P / F ratio)
                     </label>
                 </form>
             </div>
