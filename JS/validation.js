@@ -2,12 +2,15 @@ function Result_High(count_epidem,count_vital,count_lab){
     var total = count_epidem+count_lab+count_vital;
     var res = (total/total_param)*10;
     res = res.toFixed(1);
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementsByClassName("modal")[0];
     document.getElementById("span1").innerHTML = count_epidem +" "+" "+ "Parameters Out Of Normal Range";
     document.getElementById("span2").innerHTML = count_vital +" "+" "+ "Parameters Out Of Normal Range";
     document.getElementById("span3").innerHTML = count_lab +" "+" "+ "Parameters Out Of Normal Range";
     console.log("The total number of parameters are high risk:" + total);
     document.getElementById("risk_fact").innerHTML = "Risk Factor is " +" "+res+" "+"on a scale of 1-10";
+    document.getElementsByClassName("modal-header")[0].style.backgroundColor = "red";
+    document.getElementsByClassName("modal-footer")[0].style.backgroundColor = "red";
+    document.getElementById("md").innerHTML = "Patient is at High Risk";
     modal.style.display = "block";
     var sspan = document.getElementsByClassName("close")[0];
     sspan.onclick = function(){
@@ -23,15 +26,18 @@ function Result_Moderate(count_epidem,count_vital,count_lab){
     var total = count_epidem+count_lab+count_vital;
     var res = (total/total_param)*10;
     res = res.toFixed(1);
-    var modal = document.getElementById("myModal2");
-    document.getElementById("smspan1").innerHTML = count_epidem +" "+" "+ "Parameters Out Of Normal Range";
-    document.getElementById("smspan2").innerHTML = count_vital +" "+" "+ "Parameters Out Of Normal Range";
-    document.getElementById("smspan3").innerHTML = count_lab +" "+" "+ "Parameters Out Of Normal Range";
-    console.log("The total number of parameters are Moderate Risk:" + total);
-    document.getElementById("rismsk_fact").innerHTML = "Risk Factor is " +" "+res+" "+"on a scale of 1-10";
+    var modal = document.getElementsByClassName("modal")[0];
+    document.getElementById("span1").innerHTML = count_epidem +" "+" "+ "Parameters Out Of Normal Range";
+    document.getElementById("span2").innerHTML = count_vital +" "+" "+ "Parameters Out Of Normal Range";
+    document.getElementById("span3").innerHTML = count_lab +" "+" "+ "Parameters Out Of Normal Range";
+    console.log("The total number of parameters are moderate risk:" + total);
+    document.getElementById("risk_fact").innerHTML = "Risk Factor is " +" "+res+" "+"on a scale of 1-10";
+    document.getElementsByClassName("modal-header")[0].style.backgroundColor = "orange";
+    document.getElementsByClassName("modal-footer")[0].style.backgroundColor = "orange";
+    document.getElementById("md").innerHTML = "Patient is at Moderate Risk";
     modal.style.display = "block";
-    var smspan = document.getElementsByClassName("close2")[0];
-    smspan.onclick = function(){
+    var sspan = document.getElementsByClassName("close")[0];
+    sspan.onclick = function(){
         modal.style.display = "none";
     }
     window.onclick = function(event){
@@ -44,20 +50,23 @@ function Result_Low(count_epidem,count_vital,count_lab){
     var total = count_epidem+count_lab+count_vital;
     var res = (total/total_param)*10;
     res = res.toFixed(1);
-    var modal1 = document.getElementById("myModal1");
-    document.getElementById("sspan1").innerHTML = count_epidem + " "+" "+"Parameters Out Of Normal Range";
-    document.getElementById("sspan2").innerHTML = count_vital +" "+" " +"Parameters Out Of Normal Range";
-    document.getElementById("sspan3").innerHTML = count_lab +" "+ " "+ "Parameters Out Of Normal Range";
+    var modal = document.getElementsByClassName("modal")[0];
+    document.getElementById("span1").innerHTML = count_epidem +" "+" "+ "Parameters Out Of Normal Range";
+    document.getElementById("span2").innerHTML = count_vital +" "+" "+ "Parameters Out Of Normal Range";
+    document.getElementById("span3").innerHTML = count_lab +" "+" "+ "Parameters Out Of Normal Range";
     console.log("The total number of parameters are low risk:" + total);
-    document.getElementById("rissk_fact").innerHTML = "Risk Factor is " + " "+res+" "+"on a scale of 1-10";
-    modal1.style.display = "block";
-    var sspan1 = document.getElementsByClassName("close1")[0];
-    sspan1.onclick = function(){
-        modal1.style.display = "none";
+    document.getElementById("risk_fact").innerHTML = "Risk Factor is " +" "+res+" "+"on a scale of 1-10";
+    document.getElementsByClassName("modal-header")[0].style.backgroundColor = "green";
+    document.getElementsByClassName("modal-footer")[0].style.backgroundColor = "green";
+    document.getElementById("md").innerHTML = "Patient is at Low Risk";
+    modal.style.display = "block";
+    var sspan = document.getElementsByClassName("close")[0];
+    sspan.onclick = function(){
+        modal.style.display = "none";
     }
     window.onclick = function(event){
-        if(event.target == modal1){
-            modal1.style.display = "none";
+        if(event.target == modal){
+            modal.style.display = "none";
         }
     }
 }
@@ -174,15 +183,15 @@ function checkParam(){
         count_lab+=1;
     }
     if(ct == null && ct_btn == 0){
-        document.getElementById("salc").innerHTML = "CT(Corad Score) Count is needed or press N/A";
-        document.getElementById("salc").style.visibility = "visible";
+        document.getElementById("sct").innerHTML = "CT(Corad Score) Count is needed or press N/A";
+        document.getElementById("sct").style.visibility = "visible";
     }
     else if( ct != null && ct > 4){
         count_lab+=1;
     }
     if(apg == null && apg_btn == 0){
-        document.getElementById("salc").innerHTML = "APG(P/F Ratio) Count is needed or press N/A";
-        document.getElementById("salc").style.visibility = "visible";
+        document.getElementById("sapg").innerHTML = "APG(P/F Ratio) Count is needed or press N/A";
+        document.getElementById("sapg").style.visibility = "visible";
     }
     else if( apg != null && apg < 150){
         count_lab+=1;

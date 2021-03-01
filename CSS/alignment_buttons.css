@@ -1,4 +1,4 @@
-#ag3{
+/* #ag3{
     margin-left: 235px;
 }
 .container {
@@ -14,16 +14,16 @@
   }
   
   /* Hide the browser's default checkbox */
-  .container input {
+  /* .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
+  } */
   
   /* Create a custom checkbox */
-  .checkmark {
+  /* .checkmark {
     position: absolute;
     top: 0;
     left: 350px;
@@ -31,31 +31,31 @@
     width: 25px;
     background-color: #cdcdcd;
   }
-  
+   */
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  /* .container:hover input ~ .checkmark {
     background-color: #ccc;
-  }
+  } */
   
   /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  /* .container input:checked ~ .checkmark {
     background-color: #2196F3;
-  }
+  } */
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+  /* .checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
+  } */
   
   /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+  /* .container input:checked ~ .checkmark:after {
     display: block;
-  }
+  } */
   
   /* Style the checkmark/indicator */
-  .container .checkmark:after {
+  /* .container .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -91,7 +91,7 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-}
+}  */
 .error{
     visibility: hidden; 
     color: red;
@@ -99,7 +99,7 @@
 /* label{
     border: 1px solid black;
 } */
-.units{
+/* .units{
     margin-left: 285px;
 }
 .measure{
@@ -140,8 +140,8 @@
 .not_apg{
     background-color: #e7e7e7;
     margin-left: 122px;
-}
-@media (-webkit-min-device-pixel-ratio :2) and (-webkit-max-device-pixel-ratio:2.9){
+} */
+/* @media (-webkit-min-device-pixel-ratio :2) and (-webkit-max-device-pixel-ratio:2.9){
     #ag3{
         margin-left: 60px;
     }
@@ -314,4 +314,4 @@
     .not_apg{
         margin-left: 32px;
     }
-}
+} */

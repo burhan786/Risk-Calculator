@@ -4,41 +4,288 @@
         <title>Risk Calculator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./CSS/Calc.css">
-        <link rel="stylesheet" href="./CSS/alignment_buttons.css">
         <link rel="stylesheet" href="./CSS/rpage.css">
-        <link rel="stylesheet" href="./CSS/rpage1.css">
-            <link rel="stylesheet" href="./CSS/rpage2.css">
-            <script src="./JS/extract_variables.js"></script>
+        <link rel="stylesheet" href="./CSS/alignment_buttons.css">
+        <link rel="stylesheet" href="./CSS/aboutus.css">
+        <script src="./JS/extract_variables.js"></script>
         <script src="./JS/validation.js"></script>
         <script data-ad-client="ca-pub-1968481225731047" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
       
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/b5377164ab.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header style="background-color: #343a40;">
-            <div style="display: flex;flex-direction: row;">
-                <div style=" margin-left: 15px;margin-top: 10px;">
-                    <img src="./favicon.ico" height="50px">
-                </div>
-                <div style="margin-left: 900px; margin-top: 20px;" class="fcu">
-                    <a href="index.html"><span class="fcu"><i class="fa fa-calculator" aria-hidden="true"></i> Calculator</span></a>
-                </div>
-                <div style="margin-left: 20px;margin-top: 20px;" class="fcuk">
-                    <a href="Teams.html"><span class="fcuk"><i class="fa fa-user-circle-o" aria-hidden="true"></i> About
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-default fixed-top">
+              <a class="navbar-brand" href="index.html"><img src="./favicon.ico" height="50px" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><span><i class="fa fa-calculator" aria-hidden="true"></i> Calculator</span></a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="Teams.html"><span><i class="fa fa-user-circle-o" aria-hidden="true"></i> About
                         Us</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Webpage.html" ><span><i
+                          class="fa fa-address-book-o" aria-hidden="true"></i>
+                        Appraisals</span></a>
+                  </li>
+              </div>
+            </nav>
+        </header>
+        <h1 class = "text-center" style="margin-top:110px">RISK CALCULATOR</h1>
+        <form class="mt-5 container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-4 rounded shadow mt-5">
+                    <h2 class="text-center">EPIDEMIOLOGY</h2>
+                    <div class="row mt-5">
+                        <div class="col-3 col-sm-6 col-lg-3">
+                            <label >AGE:</label>
+                        </div>
+                        <div class="col-6 col-lg-9 col-sm-6">
+                            <input type = "number" id="ag3" onchange="checkAGE()" ><br>
+                        </div>
+                        <span class="error" id="sage">Age Field is Important</span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-sm-6 col-9 col-lg-7">
+                            <label  >H/O PULMONARY DISEASE</label>
+                        </div>
+                        <div class ="col-sm-6 col-3 col-lg-5">
+                            <input  id="pd" onclick="checkPD()" style="width:30px;height:30px" type = "checkbox"><br>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-9 col-sm-6 col-lg-7">
+                            <label  >H/O CKD</label>
+                        </div>
+                        <div class ="col-sm-6 col-3 col-lg-5">
+                            <input  id="ckd" onclick="checkCKD()" style="width:30px;height:30px" type = "checkbox"><br>
+                        </div> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-9 col-sm-6 col-lg-7">
+                            <label  >H/O DM (HbA1c > 7.6)</label>
+                        </div>
+                        <div class ="col-sm-6 col-3 col-lg-5">
+                            <input  id="dm" onclick="checkDM()" style="width:30px;height:30px" type = "checkbox"><br>
+                        </div> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-9 col-sm-6 col-lg-7">
+                            <label  >H/O HTN</label>
+                        </div>
+                        <div class ="col-sm-6 col-3 col-lg-5">
+                            <input  id="htn" onclick="checkHTN()" style="width:30px;height:30px" type = "checkbox"><br>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-9 col-sm-6 col-lg-7">
+                            <label  >H/O HIV</label>
+                        </div>
+                        <div class ="col-sm-6 col-3 col-lg-5">
+                            <input  id="hiv onclick="checkHIV()" style="width:30px;height:30px" type = "checkbox"><br>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-9 col-sm-6 col-lg-7">
+                            <label  >IMMUNOSUPRESSION/TRANSPLANT</label>
+                        </div>
+                        <div class ="col-sm-6 col-3 col-lg-5">
+                            <input  id="imt" onclick="checkIMT()" style="width:30px;height:30px" type = "checkbox"><br>
+                        </div>
+                    </div>
                 </div>
-                <div style="margin-left: 20px;margin-top: 20px;" class="fcuk">
-                    <a href="Webpage.html"><span class="fcuk"><i class="fa fa-address-book-o" aria-hidden="true"></i> Appraisals</span></a>
+                <div class="col-sm-12 col-lg-4 rounded shadow mt-5">
+                    <h2 class="text-center">VITAL SIGNS</h2>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-5 col-sm-6 col-lg-6">
+                            <label  >RESPIRATORY RATE</label>
+                        </div>
+                        <div class ="col-sm-6 col-4 col-lg-6">
+                            <input type="number" id="rr" onchange="checkRR()"><br>
+                        </div>
+                         <span class="error" id="srr">Respiratory Rate Field is Important</span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-5 col-sm-6 col-lg-6">
+                            <label  >HEART RATE</label>
+                        </div>
+                        <div class ="col-sm-6 col-4 col-lg-6">
+                            <input type="number" id="hr" onchange="checkHR()"><br>
+                        </div>
+                         <span class="error" id="shr">Heart Rate Field is Important</span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-5 col-sm-6 col-lg-6">
+                            <label  >SPO2</label>
+                        </div>
+                        <div class ="col-sm-6 col-4 col-lg-6">
+                            <input type="number" id="sp" onchange="checkSP()"><br>
+                        </div>
+                         <span class="error" id="sspo">SPO Field is Important</span> 
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 col-12 rounded shadow mt-5">
+                    <h2 class="text-center">LABORATORY FINDINGS</h2>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>DDIMER:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="dd" onchange="checkDD()"  placeholder="Unit:&mu;g/mL">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            &mu;g/mL
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" id="btn_dd" onclick="NA_DD()">N/A</button>
+                        </div>
+                         <span class="error" id="sdd"></span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>CPK:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="cpk" onchange="checkCPK()"  placeholder="Unit:U/L">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            U/L
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" class="not_app_cpk" id="btn_cpk" onclick="NA_CPK()">N/A</button>
+                        </div>
+                         <span class="error" id="scpk"></span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>CRP:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="crp" onchange="checkCRP()"  placeholder="Unit:mg/L">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            mg/L
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" class="not_app_crp" id="btn_crp" onclick="NA_CRP()">N/A</button>
+                        </div>
+                         <span class="error" id="scrp"></span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>LDH:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="ldh" onchange="checkLDH()"placeholder="Unit:U/L">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            U/L
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" class="not_app_ldh" id="btn_ldh" onclick="NA_LDH()">N/A</button>
+                        </div>
+                         <span class="error" id="sldh"></span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>TROPONIN:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="tr" onchange="checkTR()" placeholder="Unit:ng/mL">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            ng/mL
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" class="not_app_tr" id="btn_tr" onclick="NA_TR()">N/A</button>
+                        </div>
+                         <span class="error" id="str"></span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>FERRITIN:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="fr" onchange="checkFR()" placeholder="Unit:&mu;g/l">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            &mu;g/L
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" class="not_app_fr" id="btn_fr" onclick="NA_FR()">N/A</button>
+                        </div>
+                         <span class="error" id="sfr"></span>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>ALC:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="alc" onchange="checkALC()">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" class="not_app" id="btn_alc" onclick="NA_ALC()">N/A</button>
+                        </div>
+                         <span class="error" id="salc"></span> 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>CT SCAN:</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="ct" onchange="checkCT()">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" id="btn_ct" class="not_ct" onclick="NA_CT()">N/A</button><br>
+                        </div>
+                         <span class="error" id="sct"></span> 
+                    </div>
+                    <div class="row mt-4">
+                        <div class="form-check-label col-3 col-sm-3 col-lg-2">
+                            <label>ABG: (P/F RATIO)</label>
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <input type="number" id="apg" onchange="checkAPG()">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                        </div>
+                        <div class ="col-sm-3 col-3 col-lg-3">
+                            <button type="button" class="not_apg" id="btn_apg" onclick="NA_APG()">N/A</button><br>
+                        </div>
+                         <span class="error" id="sapg"></span> 
+                    </div>
                 </div>
             </div>
-          </header>
-          <h1 style="text-align: center;font-size: 50px;opacity: 0.65;">RISK CALCULATOR</h1>
-        <div class="Image-container" style="margin-top: 10px;">
-            <img src="./images/intro.jpg" width="100%" height="250px">
+            <div class="row mt-5">
+                <div class="col-lg-7 col-sm-12 col-12 text-center" style="margin-top: 15px;">
+                    <button type="button" class = "btn btn-danger btn-lg" id="sub" onclick="checkParam()">CHECK PARAMETERS</button>
+                </div>
+                <div class="col-lg-3 col-sm-12 xsmt-5 col-12 text-center" style="margin-top:15px">
+                    <button type="button" class = "btn btn-success btn-lg" id ="npat" onclick="newpage()">NEW PATIENT</button>
+                </div>
+            </div>
+            <div class="mt-5 container-fluid">
+                <a href="https://forms.gle/3yrDBz4CeLhnW4kX8" target="_blank"><marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">Click Here To Provide Your Valuable Feedback</marquee></a>
+            </div>
+        </form>
+        <div class="container-fluid mt-5 rounded shadow" >
             <div class="text-container">
                 <div class="Center_txt">
                     <p id="contact"><i>
@@ -48,279 +295,47 @@
                 </div>
             </div>
         </div>
-        <div class="para-container">
-            <div class="epidem-container col-md-6 col-sm-12">
-                <h1 class="head">EPIDEMIOLOGY</h1>
-                <form class="epidem">
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        Age:           
-                        <input type = "number" id="ag3" onchange="checkAGE()"><br>
-                        <span class="error" id="sage">Age Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                  <label class="container">
-                    H/O PULMONARY DISEASE:
-                    <input type="checkbox" id="pd">
-                    <span class="checkmark" onclick="checkPD()"></span>
-                    <br>
-                    <span class="error" id="spul">Pulmonary Field is Important</span>
-                  </label>
-                    <br>  
-                    <br>
-                    <label class="container">
-                        H/O CKD:
-                        <input type="checkbox" id="ckd">
-                        <span class="checkmark" onclick="checkCKD()"></span><br>
-                        <span class="error" id="sckd">CKD Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="container">
-                        H/O DM/(HbA1c > 7.6):
-                        <input type="checkbox" id="dm">
-                        <span class="checkmark" onclick="checkDM()"></span><br>
-                        <span class="error" id="sdm">DM Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="container">
-                        H/O HTN:
-                        <input type="checkbox" id="htn">
-                        <span class="checkmark" onclick="checkHTN()"></span><br>
-                        <span class="error" id="shtn">HTN Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="container">
-                        H/O HIV:
-                        <input type="checkbox" id="hiv">
-                        <span class="checkmark" onclick="checkHIV()"></span><br>
-                        <span class="error" id="shiv">HIV Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="container">
-                        IMMUNOSUPRESSION
-                        <input type="checkbox" id="imt">
-                        <span class="checkmark" onclick="checkIMT()"></span>
-                        <br>
-                        /TRANSPLANT:
-                        <br>
-                        <span class="error" id="simt">Immunosuppression Field is Important</span>
-                    </label>
-
-                </form>
-
-            </div>
-            <div class="vital-container col-md-6 col-sm-12">
-                <h1 class="head">VITAL SIGNS</h1>
-                <form class="vital">
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        RESPIRATORY RATE:
-                        <input type="number" id="rr" onchange="checkRR()"><br>
-                        <span class="error" id="srr">RESPIRATORY RATE Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        HEART RATE:
-                        <input type="number" id="hr" onchange="checkHR()"><br>
-                        <span class="error" id="shr">HEARTRATE Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        SPO2:
-                        <input type="number" id="sp" onchange="checkSP()"><br>
-                        <span class="error" id="sspo">SPO2 Field is Important</span>
-                    </label>
-                </form>
-
-            </div>
-            <div class="lab-findings col-md-6 col-sm-12">
-                <h1 class="head">LABORATORY FINDINGS</h1>
-                <form class="lab">
-                    <label class="units">Units</label>
-                    <br><br>
-                    <label class="para_name">
-                        DDimer:
-                        <input type="number" id="dd" onchange="checkDD()" placeholder="Unit:&mu;g/mL">
-                        <label class="measure">&mu;g/mL</label>
-                        <button type="button" class="not_app_dd" id="btn_dd" onclick="NA_DD()">N/A</button>
-                        <br>
-                        <span class="error" id="sdd">D Dimer Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        CPK:
-                        <input type="number" id="cpk" onchange="checkCPK()" placeholder="Unit:U/L">
-                        <label class="measure">U/L</label>
-                        <button type="button" class="not_app_cpk" id="btn_cpk" onclick="NA_CPK()">N/A</button>
-                        <br>
-                        <span class="error" id="scpk">CPK Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        CRP:
-                        <input type="number" id="crp" onchange="checkCRP()" placeholder="Unit:mg/L">
-                        <label class="measure">mg/L</label>
-                        <button type="button" class="not_app_crp" id="btn_crp" onclick="NA_CRP()">N/A</button>
-                        <br>
-                        <span class="error" id="scrp">CRP Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        LDH:
-                        <input type="number" id="ldh" onchange="checkLDH()"placeholder="Unit:U/L">
-                        <label class="measure">U/L</label>
-                        <button type="button" class="not_app_ldh" id="btn_ldh" onclick="NA_LDH()">N/A</button>
-                        <br>
-                        <span class="error" id="sldh">LDH Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        Troponin:
-                        <input type="number" id="tr" onchange="checkTR()" placeholder="Unit:ng/mL">
-                        <label class="measure">ng/mL</label>
-                        <button type="button" class="not_app_tr" id="btn_tr" onclick="NA_TR()">N/A</button>
-                        <br>
-                        <span class="error" id="str">TROPOPIN Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        Ferritin:
-                        <input type="number" id="fr" onchange="checkFR()" placeholder="Unit:&mu;g/l">
-                        <label class="measure">&mu;g/L</label>
-                        <button type="button" class="not_app_fr" id="btn_fr" onclick="NA_FR()">N/A</button>
-                        <br>
-                        <span class="error" id="sfr">FERRITIN Field is Important</span>
-                    </label>
-                    <br>
-                    <br>
-                    <label class="para_name">
-                        Absolute:  
-                        <input type="number" id="alc" onchange="checkALC()">
-                        <button type="button" class="not_app" id="btn_alc" onclick="NA_ALC()">N/A</button>
-                        <br>
-                        Lymphocyte 
-                        Count<br>
-                        <span class="error" id="salc">Absolute Lymphotic Count Field is Important</span>
-                    </label><br>
-                    <label class="para_name">
-                        CT SCAN
-                        <input type="number" id="ct" onchange="checkCT()">
-                        <button type="button" id="btn_ct" class="not_ct" onclick="NA_CT()">N/A</button><br>
-                        (Corad Score)
-                    </label><br><br>
-                    <label class="para_name">
-                        ABG:
-                        <input type="number" id="apg" onchange="checkAPG()">
-                        <button type="button" class="not_apg" id="btn_apg" onclick="NA_APG()">N/A</button><br>
-                        (P / F ratio)
-                    </label>
-                </form>
-            </div>
-        </div>
-        <button type="button" id="sub" onclick="checkParam()">CHECK PARAMETERS</button>
-        <button type="button" id ="npat" onclick="newpage()">NEW PATIENT</button>
-        <a href="https://forms.gle/3yrDBz4CeLhnW4kX8" target="_blank"><marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">Click Here To Provide Your Valuable Feedback</marquee></a>
-        <div class="information">
+        <div class="container-fluid mt-5 rounded shadow">
             <pre>
-Moderate and high risk patients require aggressive monitoring of inflammatory milieu or up triaging. Anti-inflammatory therapy with steroid and Anticoagulation recommended.
-*Please note these are mere recommendation from the author based on the available scientific recommendation and no means intended to replace local guidelines.
+        Moderate and high risk patients require aggressive monitoring of inflammatory milieu or up triaging. Anti-inflammatory therapy with steroid and Anticoagulation recommended.
+        *Please note these are mere recommendation from the author based on the available scientific recommendation and no means intended to replace local guidelines.
             </pre>
         </div>
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="close">&times;</span>
-                <div class="respa">
-                    <span id="risk_fact" class="display_high"></span>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+          <div class="modal"  role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content modal-lg">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="risk_fact">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="respa">Epidemiology:
+                        <span id="span1"></span>
+                    </div>
+                    <div class="respa">Vital Signs:
+                        <span id="span2"></span>
+                    </div>
+                    <div class="respa">Lab-Findings:
+                        <span id="span3"></span>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between font-weight-bold">
+                    <span id="md"></span>
                 </div>
               </div>
-              <div class="modal-body">
-                <div class="respa">Epidemiology:
-                    <span id="span1"></span>
-                </div>
-                <div class="respa">Vital Signs:
-                    <span id="span2"></span>
-                </div>
-                <div class="respa">Lab-Findings:
-                    <span id="span3"></span>
-                </div>
             </div>
-              <div class="modal-footer">
-                <h2>PATIENT IS AT HIGH RISK</h2>
-              </div>
-            </div>
-          
-          </div>
-        <div id="myModal1" class="modal1">
-
-            <!-- Modal content -->
-            <div class="modal-content1">
-              <div class="modal-header1">
-                <span class="close1">&times;</span>
-                <div class="respa">
-                    <span id="rissk_fact" class="display_low"></span>
-                </div>
-              </div>
-              <div class="modal-body1">
-                <div class="respa">Epidemiology:
-                    <span id="sspan1"></span>
-                </div>
-                <div class="respa">Vital Signs:
-                    <span id="sspan2"></span>
-                </div>
-                <div class="respa">Lab-Findings:
-                    <span id="sspan3"></span>
-                </div>
-            </div>
-              <div class="modal-footer1">
-                <h2>PATIENT IS AT LOW RISK</h2>
-              </div>
-            </div>
-          
-          </div>
-          <div id="myModal2" class="modal2">
-
-            <!-- Modal content -->
-            <div class="modal-content2">
-              <div class="modal-header2">
-                <span class="close2">&times;</span>
-                <div class="respa">
-                    <span id="rismsk_fact" class="display_moderate"></span>
-                </div>
-              </div>
-              <div class="modal-body2">
-                <div class="respa">Epidemiology:
-                    <span id="smspan1"></span>
-                </div>
-                <div class="respa">Vital Signs:
-                    <span id="smspan2"></span>
-                </div>
-                <div class="respa">Lab-Findings:
-                    <span id="smspan3"></span>
-                </div>
-            </div>
-              <div class="modal-footer2">
-                <h2>PATIENT AT MODERATE RISK</h2>
-              </div>
-            </div>
-          
-          </div>
+        </div>
         
     </body>
 </html>

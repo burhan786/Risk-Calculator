@@ -20,7 +20,7 @@ pre{
 #contact{
     margin-left: 70px;
 }
-.text-container{
+/* .text-container{
     position: absolute;
     top: 24%;
     background-color: white;
@@ -38,7 +38,7 @@ pre{
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 15px;
-}
+} */
 .para-container{
     display: flex;
     margin-top: 20px;
@@ -46,7 +46,7 @@ pre{
 ::placeholder{
     color: white;
 }
-.para_name{
+/* .para_name{
     font-size: 17px;
 }
 .vital-container{
@@ -115,7 +115,7 @@ pre{
     -moz-box-shadow: 0 0 5px #999;
     -webkit-box-shadow: 0 0 5px #999;
     box-shadow: 0 0 15px #999;
-    /* height: 620px; */
+     height: 620px; 
     margin-left: 2px;
 }
 .epidem{
@@ -147,13 +147,13 @@ pre{
     color: #81c784;
 }
 .heading{
-    /* margin-top: 0px; */
+     margin-top: 0px; 
     margin-bottom: 15px;
-    /* font-size: 50px; */
+     font-size: 50px; 
     color: rgba(255,255,255,.75);
-    /* text-shadow: 5px 5px blue; */
+     text-shadow: 5px 5px blue; 
     font-weight: normal;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     text-align: center;
 
 }
@@ -403,4 +403,77 @@ pre{
     #apg{
         margin-left: 43px;
     }
+} */
+#dd{
+    width: 100px;
+}
+#cpk{
+    width: 100px;
+}
+#crp{
+    width: 100px;
+}
+#ldh{
+    width: 100px;
+}
+#tr{
+    width: 100px;
+}
+#fr{
+    width: 100px;
+}
+#alc{
+    width: 100px;
+}
+#ct{
+    width: 100px;
+}
+#apg{
+    width: 100px;
+}
+@media (max-width:412px){
+    #dd{
+        width: 90px;
+    }
+    #cpk{
+        width: 90px;
+    }
+    #crp{
+        width: 90px;
+    }
+    #ldh{
+        width: 90px;
+    }
+    #tr{
+        width: 90px;
+    }
+    #fr{
+        width: 90px;
+    }
+    #alc{
+        width: 90px;
+    }
+    #ct{
+        width: 90px;
+    }
+    #apg{
+        width: 90px;
+    }
+    #sub{
+        width:230px;
+    }
+    #npat{
+        width:230px;
+        margin-top: 25px;
+    }
+    #rr{
+        width: 150px;
+    }
+    #hr{
+        width: 150px;
+    }
+    #sp{
+        width: 150px;
+    }
+
 }
